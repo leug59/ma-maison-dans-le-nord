@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { buildOpenGraph } from "@/app/_lib/og";
+import { buildServiceSchema } from "@/app/_lib/schema";
 
 
 export const metadata: Metadata = {
@@ -208,6 +209,15 @@ export default function MaisonBoisPage() {
           </div>
         </div>
       </section>
+    
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildServiceSchema({
+          name: "Construction de maison ossature bois dans le Nord",
+          description: metadata.description as string,
+          url: "/constructeur-maison-bois-nord",
+        })) }}
+      />
     </>
   );
 }

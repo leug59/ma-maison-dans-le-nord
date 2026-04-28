@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { buildBreadcrumbSchema } from "@/app/_lib/schema";
 
 export interface CityMaisonData {
   maisonTypeLabel: string;
@@ -13,9 +14,29 @@ export interface CityMaisonData {
   relatedCities: { label: string; href: string }[];
 }
 
-export default function CityMaisonPage({ data }: { data: CityMaisonData }) {
+export default function CityMaisonPage({
+  data,
+  canonicalPath,
+}: {
+  data: CityMaisonData;
+  canonicalPath?: string;
+}) {
+  const breadcrumbSchema = canonicalPath
+    ? buildBreadcrumbSchema([
+        { name: "Accueil", url: "/" },
+        { name: `Maison ${data.maisonTypeLabel}`, url: data.maisonTypeHref },
+        { name: data.city, url: canonicalPath },
+      ])
+    : null;
+
   return (
     <>
+      {breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      )}
       {/* Hero */}
       <section className="bg-navy py-24 px-4">
         <div className="max-w-4xl mx-auto text-center">

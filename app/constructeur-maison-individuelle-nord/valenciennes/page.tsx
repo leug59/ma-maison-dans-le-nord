@@ -35,5 +35,5 @@ const data: CityMaisonData = {
 };
 
 export default function Page() {
-  return <CityMaisonPage data={data} />;
+  return <CityMaisonPage data={data} canonicalPath="/constructeur-maison-individuelle-nord/valenciennes" />;
 }

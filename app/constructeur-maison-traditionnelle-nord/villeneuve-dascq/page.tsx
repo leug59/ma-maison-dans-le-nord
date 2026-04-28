@@ -34,5 +34,5 @@ const data: CityMaisonData = {
 };
 
 export default function Page() {
-  return <CityMaisonPage data={data} />;
+  return <CityMaisonPage data={data} canonicalPath="/constructeur-maison-traditionnelle-nord/villeneuve-dascq" />;
 }
