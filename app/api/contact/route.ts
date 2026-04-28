@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-const FROM = "onboarding@resend.dev";
+const FROM = "contact@ma-maison-dans-le-nord.fr";
 const TO_ADMIN = "legrandj@gmail.com";
 const SITE_NAME = "Ma Maison dans le Nord";
 
