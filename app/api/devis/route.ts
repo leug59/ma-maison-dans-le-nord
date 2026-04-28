@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
 const FROM = "contact@ma-maison-dans-le-nord.fr";
-const TO_ADMIN = "legrandj@gmail.com";
+const TO_ADMIN = "contact@ma-maison-dans-le-nord.fr";
 const SITE_NAME = "Ma Maison dans le Nord";
 
 export async function POST(req: Request) {
