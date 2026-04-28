@@ -29,10 +29,54 @@ export default function DevisForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 800));
-    setStatus("success");
-    setLoading(false);
+
+    const form = e.currentTarget;
+    const data = {
+      prenom: (form.elements.namedItem("prenom") as HTMLInputElement).value,
+      nom: (form.elements.namedItem("nom") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      telephone: (form.elements.namedItem("telephone") as HTMLInputElement).value,
+      typeMaison: (form.elements.namedItem("type-maison") as HTMLSelectElement).value,
+      budget: (form.elements.namedItem("budget") as HTMLSelectElement).value,
+      surface: (form.elements.namedItem("surface") as HTMLInputElement).value,
+      ville: (form.elements.namedItem("ville") as HTMLInputElement).value,
+      terrain: (form.querySelector('input[name="terrain"]:checked') as HTMLInputElement | null)?.value ?? "",
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/devis", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      setStatus(res.ok ? "success" : "error");
+    } catch {
+      setStatus("error");
+    } finally {
+      setLoading(false);
+    }
   };
+
+  if (status === "error") {
+    return (
+      <div className="text-center py-16">
+        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg className="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <h3 className="font-display text-2xl font-bold text-navy mb-3">Une erreur est survenue</h3>
+        <p className="text-gray-600 mb-6">L&apos;envoi a échoué. Veuillez réessayer.</p>
+        <button
+          onClick={() => setStatus("idle")}
+          className="px-8 py-3 bg-navy text-white font-semibold rounded-lg hover:bg-navy-800 transition-colors"
+        >
+          Réessayer
+        </button>
+      </div>
+    );
+  }
 
   if (status === "success") {
     return (

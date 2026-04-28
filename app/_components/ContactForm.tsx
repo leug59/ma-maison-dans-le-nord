@@ -9,9 +9,28 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 800));
-    setStatus("success");
-    setLoading(false);
+
+    const form = e.currentTarget;
+    const data = {
+      nom: (form.elements.namedItem("nom") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      telephone: (form.elements.namedItem("telephone") as HTMLInputElement).value,
+      objet: (form.elements.namedItem("objet") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      setStatus(res.ok ? "success" : "error");
+    } catch {
+      setStatus("error");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (status === "success") {
@@ -25,20 +44,33 @@ export default function ContactForm() {
             stroke="currentColor"
             aria-hidden="true"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M5 13l4 4L19 7"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="font-display text-xl font-bold text-navy mb-2">
-          Message envoyé !
-        </h3>
+        <h3 className="font-display text-xl font-bold text-navy mb-2">Message envoyé !</h3>
         <p className="text-gray-600 text-sm">
-          Nous vous répondrons dans les meilleurs délais.
+          Nous vous répondrons dans les meilleurs délais. Un email de confirmation vous a été envoyé.
         </p>
+      </div>
+    );
+  }
+
+  if (status === "error") {
+    return (
+      <div className="text-center py-12">
+        <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-5">
+          <svg className="w-7 h-7 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <h3 className="font-display text-xl font-bold text-navy mb-2">Une erreur est survenue</h3>
+        <p className="text-gray-600 text-sm mb-4">L&apos;envoi a échoué. Veuillez réessayer.</p>
+        <button
+          onClick={() => setStatus("idle")}
+          className="px-6 py-2 bg-navy text-white text-sm font-semibold rounded-lg hover:bg-navy-800 transition-colors"
+        >
+          Réessayer
+        </button>
       </div>
     );
   }
@@ -47,10 +79,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
-          <label
-            htmlFor="contact-nom"
-            className="block text-sm font-medium text-navy mb-1.5"
-          >
+          <label htmlFor="contact-nom" className="block text-sm font-medium text-navy mb-1.5">
             Nom complet <span className="text-red-500" aria-hidden="true">*</span>
           </label>
           <input
@@ -64,10 +93,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label
-            htmlFor="contact-email"
-            className="block text-sm font-medium text-navy mb-1.5"
-          >
+          <label htmlFor="contact-email" className="block text-sm font-medium text-navy mb-1.5">
             Email <span className="text-red-500" aria-hidden="true">*</span>
           </label>
           <input
@@ -83,10 +109,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label
-          htmlFor="contact-telephone"
-          className="block text-sm font-medium text-navy mb-1.5"
-        >
+        <label htmlFor="contact-telephone" className="block text-sm font-medium text-navy mb-1.5">
           Téléphone
         </label>
         <input
@@ -100,10 +123,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label
-          htmlFor="contact-objet"
-          className="block text-sm font-medium text-navy mb-1.5"
-        >
+        <label htmlFor="contact-objet" className="block text-sm font-medium text-navy mb-1.5">
           Objet <span className="text-red-500" aria-hidden="true">*</span>
         </label>
         <input
@@ -117,10 +137,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label
-          htmlFor="contact-message"
-          className="block text-sm font-medium text-navy mb-1.5"
-        >
+        <label htmlFor="contact-message" className="block text-sm font-medium text-navy mb-1.5">
           Message <span className="text-red-500" aria-hidden="true">*</span>
         </label>
         <textarea
@@ -134,19 +151,10 @@ export default function ContactForm() {
       </div>
 
       <div className="flex items-start gap-3">
-        <input
-          type="checkbox"
-          id="contact-rgpd"
-          name="rgpd"
-          required
-          className="mt-1 accent-gold"
-        />
+        <input type="checkbox" id="contact-rgpd" name="rgpd" required className="mt-1 accent-gold" />
         <label htmlFor="contact-rgpd" className="text-sm text-gray-600">
           J&apos;accepte le traitement de mes données conformément à la{" "}
-          <a
-            href="/politique-confidentialite"
-            className="text-gold hover:underline"
-          >
+          <a href="/politique-confidentialite" className="text-gold hover:underline">
             politique de confidentialité
           </a>
           .
