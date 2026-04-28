@@ -15,6 +15,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison individuelle à Arras",
   subtitle:
     "Arras et le Pays d'Artois : piscines municipales, golf, théâtres, musée des Beaux-Arts et Cité Nature — un cadre de vie exceptionnel pour votre maison individuelle.",
+  openingIntro:
+    "Trouver un constructeur de maison individuelle dans le Nord n'est pas si compliqué. Grâce à l'équipe de Ma maison dans le Nord, vous allez pouvoir réaliser votre projet immobilier, en toute sérénité.",
   intro:
     "Arras, dans le Pays d'Artois, propose à ses habitants une palette complète d'équipements. Pour le sport : deux piscines municipales (Georges Daullé et Élie Desbin), l'Aquarena aquatic center, le Golf Club d'Arras et le complexe tennis des Grandes Prairies. Pour la culture : le Musée des Beaux-Arts, la Tandem Scène Nationale, le Pharos et la Cité Nature pour la découverte scientifique. Un cadre de vie complet pour toute la famille.",
   whyBuild:

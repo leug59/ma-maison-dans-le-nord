@@ -16,7 +16,7 @@ const data: CityMaisonData = {
   subtitle:
     "Douai, ville du beffroi UNESCO et de l'Abbaye des Près aux villas Art Déco, incarne le meilleur de l'architecture traditionnelle des Hauts-de-France.",
   intro:
-    "Douai est une ville chargée d'histoire, avec son beffroi inscrit au patrimoine mondial de l'UNESCO et le quartier de l'Abbaye des Près avec ses remarquables villas Art Déco. La ville dispose d'un vaste réseau cyclable reliant les communes voisines de Raches, Anhiers et Waziers. L'architecture traditionnelle douaisienne est caractérisée par ses façades en brique rouge, ses toits noirs pentus et ses hautes fenêtres — un style intemporel qui séduit toujours.",
+    "Douai est une ville chargée d'histoire, avec son beffroi inscrit au patrimoine mondial de l'UNESCO et le quartier de l'Abbaye des Près avec ses remarquables villas Art Déco. La ville est au cœur d'un bassin de vie comprenant les communes de Raches, Anhiers, Waziers, Roost-Warendin, Flers-en-Escrebieux, Cuincy, Sin-le-Noble et Lambres-lez-Douai. L'architecture traditionnelle douaisienne est caractérisée par ses façades en brique rouge, ses toits noirs pentus et ses hautes menuiseries — un style intemporel qui séduit toujours.",
   whyBuild:
     "La maison traditionnelle à Douai est un choix qui traverse les générations. Son architecture en brique, typique des Hauts-de-France, s'intègre naturellement dans le tissu résidentiel douaisien et offre une valorisation immobilière éprouvée. Nos constructeurs partenaires connaissent parfaitement ce style architectural et ses exigences techniques.",
   constructorAdvice:

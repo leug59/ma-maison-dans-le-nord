@@ -6,6 +6,7 @@ export interface CityMaisonData {
   city: string;
   h1: string;
   subtitle: string;
+  openingIntro?: string;
   intro: string;
   whyBuild: string;
   constructorAdvice: string;
@@ -39,8 +40,17 @@ export default function CityMaisonPage({ data }: { data: CityMaisonData }) {
         </div>
       </section>
 
+      {/* Opening intro */}
+      {data.openingIntro && (
+        <section className="py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-gray-700 text-lg leading-relaxed">{data.openingIntro}</p>
+          </div>
+        </section>
+      )}
+
       {/* Contenu principal */}
-      <section className="py-20 px-4">
+      <section className={`py-20 px-4${data.openingIntro ? " pt-4" : ""}`}>
         <div className="max-w-4xl mx-auto space-y-10">
           <div>
             <h2 className="font-display text-2xl font-bold text-navy mb-4">
@@ -67,6 +77,37 @@ export default function CityMaisonPage({ data }: { data: CityMaisonData }) {
             <p className="text-gray-600 leading-relaxed text-lg">
               {data.constructorAdvice}
             </p>
+          </div>
+
+          {/* 2-step process */}
+          <div className="mt-10 grid sm:grid-cols-2 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <div className="w-9 h-9 rounded-full bg-gold text-white font-bold text-lg flex items-center justify-center mb-4">
+                1
+              </div>
+              <p className="font-semibold text-navy mb-2">Remplissez notre formulaire en ligne</p>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Décrivez votre projet, vos envies et votre budget en quelques minutes.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <div className="w-9 h-9 rounded-full bg-gold text-white font-bold text-lg flex items-center justify-center mb-4">
+                2
+              </div>
+              <p className="font-semibold text-navy mb-2">Nous vous recontactons rapidement</p>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Un expert Ma Maison dans le Nord vous met en relation avec le constructeur idéal pour votre projet.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/devis"
+              className="inline-block px-8 py-4 bg-gold text-white font-semibold rounded-lg hover:bg-gold-400 transition-colors"
+            >
+              Remplir le formulaire gratuit
+            </Link>
           </div>
         </div>
       </section>

@@ -20,7 +20,7 @@ const data: CityMaisonData = {
   whyBuild:
     "Construire une maison traditionnelle à Villeneuve-d'Ascq, c'est choisir un style architectural ancré dans l'histoire de la région tout en bénéficiant de toutes les performances énergétiques et techniques des constructions neuves. Le style traditionnel nordiste s'intègre harmonieusement dans les quartiers résidentiels de la ville.",
   constructorAdvice:
-    "Certains de nos partenaires constructeurs à Villeneuve-d'Ascq exercent depuis plusieurs générations. Ils possèdent une expertise profonde de l'architecture traditionnelle régionale et ont à cœur d'écouter chaque client, de respecter les budgets définis et de livrer une maison qui correspond exactement aux attentes. Ma Maison dans le Nord facilite cette mise en relation.",
+    "Certains de nos partenaires constructeurs à Villeneuve-d'Ascq exercent depuis plusieurs générations. Ils possèdent une expertise profonde de l'architecture traditionnelle régionale et ont à cœur d'écouter chaque client, de respecter les budgets définis et de livrer une maison qui correspond exactement aux attentes. Remplissez notre questionnaire en ligne — nous vous recontacterons rapidement.",
   relatedCities: [
     { label: "Lille", href: "/constructeur-maison-traditionnelle-nord/lille" },
     { label: "Béthune", href: "/constructeur-maison-traditionnelle-nord/bethune" },

@@ -15,6 +15,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison traditionnelle à Arras",
   subtitle:
     "Arras, « Ville amie des enfants » dotée d'une Charte de l'Arbre Urbain et d'un vaste réseau cyclable, est un territoire exemplaire pour votre maison traditionnelle.",
+  openingIntro:
+    "Faire construire une habitation typique de la région du Nord n'est pas une mince affaire.",
   intro:
     "Arras et son agglomération ont développé un territoire dynamique avec de nombreux atouts. La ville dispose d'un réseau cyclable étendu reliant la citadelle, les Allées, la Grand'Place, la Place des Héros et la Place du Théâtre. Arras porte le label « Ville amie des enfants », reflétant son engagement pour améliorer la vie des plus jeunes. Une Charte de l'Arbre Urbain témoigne aussi de la préoccupation environnementale de la ville.",
   whyBuild:

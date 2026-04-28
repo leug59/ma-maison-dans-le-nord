@@ -15,6 +15,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison individuelle à Lille",
   subtitle:
     "Lille, métropole riche en culture, sports et commerces, offre de nombreux quartiers pour votre maison individuelle 100 % sur mesure.",
+  openingIntro:
+    "Vous rêvez de vous installer à Lille ? Vous avez raison : vous n'allez pas vous ennuyer !",
   intro:
     "Lille est une métropole qui offre tout : culture (musée d'histoire naturelle, palais des beaux-arts, théâtres, opéra), sports de plein air (Citadelle, Esplanade, Jardin botanique, piscine Marx Dormoy, Palais des Sports Saint-Sauveur) et shopping. La ville propose plusieurs quartiers où construire votre maison individuelle : Bois-Blancs, Faubourg de Béthune, Lille-Sud, Saint-Maurice Pellevoisin et Fives — chacun avec ses spécificités et son ambiance.",
   whyBuild:

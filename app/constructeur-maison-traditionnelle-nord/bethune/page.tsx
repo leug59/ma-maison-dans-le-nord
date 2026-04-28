@@ -20,7 +20,7 @@ const data: CityMaisonData = {
   whyBuild:
     "Construire une maison traditionnelle à Béthune, c'est trouver l'équilibre parfait entre l'ancrage dans le patrimoine architectural nordiste et la modernité de la ville. La maison traditionnelle, avec ses briques rouges et ses volumes chaleureux, s'inscrit harmonieusement dans le tissu urbain de Béthune tout en bénéficiant des nouvelles normes énergétiques (RE2020).",
   constructorAdvice:
-    "Ma Maison dans le Nord réalise une étude complète de vos besoins : préférences architecturales, orientation de la maison, choix des matériaux et budget. Nous vous mettons ensuite en relation avec des constructeurs de maisons traditionnelles reconnus dans la région béthunoise, qui vous proposent une proposition personnalisée et vous accompagnent jusqu'à la remise des clés.",
+    "Nous faisons en premier lieu un point précis et détaillé sur vos exigences : type de maison, superficie, matériaux, budget. Puis, nous vous mettons en relation avec le constructeur de maison traditionnelle qu'il vous faut dans la région béthunoise. Remplissez simplement notre formulaire en ligne — nous vous répondrons dans les plus brefs délais.",
   relatedCities: [
     { label: "Lille", href: "/constructeur-maison-traditionnelle-nord/lille" },
     { label: "Arras", href: "/constructeur-maison-traditionnelle-nord/arras" },

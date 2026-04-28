@@ -15,6 +15,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison individuelle à Valenciennes",
   subtitle:
     "Valenciennes et son agglomération (Beuvrages, Petite-Forêt, Marly, Anzin…) offrent toutes les conditions pour réussir votre projet de maison individuelle.",
+  openingIntro:
+    "Votre projet immobilier n'est pas encore bien défini ? Vous ne savez pas encore si vous allez vous implanter à Valenciennes ou dans une ville aux alentours ?",
   intro:
     "Valenciennes dispose d'une infrastructure éducative complète : 17 écoles primaires (dont Saint-Exupéry, Jean Mineur et Françoise Badar), 6 collèges, 7 lycées, ainsi que des établissements d'enseignement supérieur comme Polytechnique Hauts-de-France et Rubika. Les communes avoisinantes de Beuvrages, Petite-Forêt, La Sentinelle, Aulnoy-lez-Valenciennes, Saint-Saulve, Marly, Anzin et Sambre offrent le même niveau de qualité de vie tout en proposant souvent plus d'espace pour construire.",
   whyBuild:
