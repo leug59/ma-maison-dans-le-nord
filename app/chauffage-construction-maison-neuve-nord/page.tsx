@@ -181,6 +181,19 @@ export default function ChauffagePage() {
         </div>
       </section>
 
+      {/* Lire aussi */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-xl font-bold text-navy mb-6">Lire aussi</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/blog" className="px-5 py-2.5 bg-white border-2 border-gray-200 text-navy font-medium rounded-lg hover:border-gold hover:text-gold transition-colors text-sm">← Tous les articles</Link>
+            <Link href="/constructeur-nord-maison-passive" className="px-5 py-2.5 bg-white border-2 border-gray-200 text-navy font-medium rounded-lg hover:border-gold hover:text-gold transition-colors text-sm">Maison passive</Link>
+            <Link href="/constructeur-maison-individuelle-nord" className="px-5 py-2.5 bg-white border-2 border-gray-200 text-navy font-medium rounded-lg hover:border-gold hover:text-gold transition-colors text-sm">Maison individuelle</Link>
+            <Link href="/constructeur-maison-bois-nord" className="px-5 py-2.5 bg-white border-2 border-gray-200 text-navy font-medium rounded-lg hover:border-gold hover:text-gold transition-colors text-sm">Maison ossature bois</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-navy py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-display text-3xl font-bold text-white mb-4">Optimisez le chauffage de votre future maison</h2>

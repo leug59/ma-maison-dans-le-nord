@@ -481,6 +481,47 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Ressources */}
+      <section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="ressources-title">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Nos guides</p>
+            <h2 id="ressources-title" className="font-display text-3xl sm:text-4xl font-bold text-navy">
+              Tout ce qu&apos;il faut savoir avant de construire
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-6">
+            <Link href="/blog" className="group bg-white border border-gray-200 rounded-xl p-6 hover:border-gold hover:shadow-md transition-all">
+              <div className="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="font-display font-bold text-navy text-lg mb-2 group-hover:text-gold transition-colors">Blog construction</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Terrain, chauffage, domotique, ossature bois : nos guides pratiques pour tout comprendre avant de vous lancer.</p>
+            </Link>
+            <Link href="/budget" className="group bg-white border border-gray-200 rounded-xl p-6 hover:border-gold hover:shadow-md transition-all">
+              <div className="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="font-display font-bold text-navy text-lg mb-2 group-hover:text-gold transition-colors">Budget de construction</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Estimez le coût de votre projet : terrain, gros œuvre, finitions, frais annexes. Budgétez sereinement.</p>
+            </Link>
+            <Link href="/contact" className="group bg-white border border-gray-200 rounded-xl p-6 hover:border-gold hover:shadow-md transition-all">
+              <div className="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="font-display font-bold text-navy text-lg mb-2 group-hover:text-gold transition-colors">Nous contacter</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Une question sur votre projet dans le Nord ? Notre équipe vous répond rapidement et sans engagement.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Final */}
       <section
         className="bg-gold py-20 px-4 sm:px-6 lg:px-8"

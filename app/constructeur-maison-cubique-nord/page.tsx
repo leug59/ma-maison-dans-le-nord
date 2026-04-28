@@ -101,6 +101,27 @@ export default function MaisonCubiquePage() {
           </div>
         </div>
       </section>
+
+      {/* Autres types de maisons */}
+      <section className="bg-gray-50 py-12 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-xl font-bold text-navy text-center mb-6">Découvrez aussi nos autres types de constructions</h2>
+          <div className="flex flex-wrap gap-3 justify-center">
+            {[
+              { label: "Maison traditionnelle", href: "/constructeur-maison-traditionnelle-nord" },
+              { label: "Maison contemporaine", href: "/constructeur-de-maison-contemporaine-nord" },
+              { label: "Ossature bois", href: "/constructeur-maison-bois-nord" },
+              { label: "Plain-pied", href: "/constructeur-maison-plain-pied-nord" },
+              { label: "Maison passive", href: "/constructeur-nord-maison-passive" },
+              { label: "Maison individuelle", href: "/constructeur-maison-individuelle-nord" },
+            ].map((type) => (
+              <Link key={type.href} href={type.href} className="px-5 py-2.5 bg-white border-2 border-gray-200 text-navy font-medium rounded-lg hover:border-gold hover:text-gold transition-colors text-sm">
+                {type.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
