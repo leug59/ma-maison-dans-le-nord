@@ -229,6 +229,61 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // ── Format WordPress : /type-nord-ville → /type-nord/ville ────────
+
+      // Traditionnelle
+      { source: "/constructeur-maison-traditionnelle-nord-lille",          destination: "/constructeur-maison-traditionnelle-nord/lille",          permanent: true },
+      { source: "/constructeur-maison-traditionnelle-nord-arras",          destination: "/constructeur-maison-traditionnelle-nord/arras",          permanent: true },
+      { source: "/constructeur-maison-traditionnelle-nord-douai",          destination: "/constructeur-maison-traditionnelle-nord/douai",          permanent: true },
+      { source: "/constructeur-maison-traditionnelle-nord-valenciennes",   destination: "/constructeur-maison-traditionnelle-nord/valenciennes",   permanent: true },
+      { source: "/constructeur-maison-traditionnelle-nord-bethune",        destination: "/constructeur-maison-traditionnelle-nord/bethune",        permanent: true },
+      { source: "/constructeur-maison-traditionnelle-nord-villeneuve-dascq", destination: "/constructeur-maison-traditionnelle-nord/villeneuve-dascq", permanent: true },
+
+      // Contemporaine
+      { source: "/constructeur-maison-contemporaine-nord-lille",           destination: "/constructeur-de-maison-contemporaine-nord/lille",        permanent: true },
+      { source: "/constructeur-maison-contemporaine-nord-arras",           destination: "/constructeur-de-maison-contemporaine-nord/arras",        permanent: true },
+      { source: "/constructeur-maison-contemporaine-nord-douai",           destination: "/constructeur-de-maison-contemporaine-nord/douai",        permanent: true },
+      { source: "/constructeur-maison-contemporaine-nord-valenciennes",    destination: "/constructeur-de-maison-contemporaine-nord/valenciennes", permanent: true },
+      { source: "/constructeur-maison-contemporaine-nord-bethune",         destination: "/constructeur-de-maison-contemporaine-nord/bethune",      permanent: true },
+      { source: "/constructeur-maison-contemporaine-nord-villeneuve-dascq", destination: "/constructeur-de-maison-contemporaine-nord/villeneuve-dascq", permanent: true },
+
+      // Cubique
+      { source: "/constructeur-maison-cubique-nord-lille",                 destination: "/constructeur-maison-cubique-nord/lille",                 permanent: true },
+      { source: "/constructeur-maison-cubique-nord-arras",                 destination: "/constructeur-maison-cubique-nord/arras",                 permanent: true },
+      { source: "/constructeur-maison-cubique-nord-douai",                 destination: "/constructeur-maison-cubique-nord/douai",                 permanent: true },
+      { source: "/constructeur-maison-cubique-nord-valenciennes",          destination: "/constructeur-maison-cubique-nord/valenciennes",          permanent: true },
+      { source: "/constructeur-maison-cubique-nord-villeneuve-dascq",      destination: "/constructeur-maison-cubique-nord/villeneuve-dascq",      permanent: true },
+
+      // Ossature bois
+      { source: "/constructeur-maison-bois-nord-lille",                    destination: "/constructeur-maison-bois-nord/lille",                    permanent: true },
+      { source: "/constructeur-maison-bois-nord-arras",                    destination: "/constructeur-maison-bois-nord/arras",                    permanent: true },
+      { source: "/constructeur-maison-bois-nord-douai",                    destination: "/constructeur-maison-bois-nord/douai",                    permanent: true },
+      { source: "/constructeur-maison-bois-nord-valenciennes",             destination: "/constructeur-maison-bois-nord/valenciennes",             permanent: true },
+      { source: "/constructeur-maison-bois-nord-villeneuve-dascq",         destination: "/constructeur-maison-bois-nord/villeneuve-dascq",         permanent: true },
+
+      // Plain-pied
+      { source: "/constructeur-maison-plain-pied-nord-lille",              destination: "/constructeur-maison-plain-pied-nord/lille",              permanent: true },
+      { source: "/constructeur-maison-plain-pied-nord-arras",              destination: "/constructeur-maison-plain-pied-nord/arras",              permanent: true },
+      { source: "/constructeur-maison-plain-pied-nord-douai",              destination: "/constructeur-maison-plain-pied-nord/douai",              permanent: true },
+      { source: "/constructeur-maison-plain-pied-nord-valenciennes",       destination: "/constructeur-maison-plain-pied-nord/valenciennes",       permanent: true },
+      { source: "/constructeur-maison-plain-pied-nord-lens",               destination: "/constructeur-maison-plain-pied-nord/lens",               permanent: true },
+      { source: "/constructeur-maison-plain-pied-nord-bethune",            destination: "/constructeur-maison-plain-pied-nord/bethune",            permanent: true },
+
+      // Passive
+      { source: "/constructeur-maison-passive-nord-lille",                 destination: "/constructeur-nord-maison-passive/lille",                 permanent: true },
+      { source: "/constructeur-maison-passive-nord-arras",                 destination: "/constructeur-nord-maison-passive/arras",                 permanent: true },
+      { source: "/constructeur-maison-passive-nord-douai",                 destination: "/constructeur-nord-maison-passive/douai",                 permanent: true },
+      { source: "/constructeur-maison-passive-nord-valenciennes",          destination: "/constructeur-nord-maison-passive/valenciennes",          permanent: true },
+      { source: "/constructeur-maison-passive-nord-lens",                  destination: "/constructeur-nord-maison-passive/lens",                  permanent: true },
+      { source: "/constructeur-maison-passive-nord-bethune",               destination: "/constructeur-nord-maison-passive/bethune",               permanent: true },
+
+      // Individuelle
+      { source: "/constructeur-maison-individuelle-nord-lille",            destination: "/constructeur-maison-individuelle-nord/lille",            permanent: true },
+      { source: "/constructeur-maison-individuelle-nord-arras",            destination: "/constructeur-maison-individuelle-nord/arras",            permanent: true },
+      { source: "/constructeur-maison-individuelle-nord-douai",            destination: "/constructeur-maison-individuelle-nord/douai",            permanent: true },
+      { source: "/constructeur-maison-individuelle-nord-valenciennes",     destination: "/constructeur-maison-individuelle-nord/valenciennes",     permanent: true },
+      { source: "/constructeur-maison-individuelle-nord-villeneuve-dascq", destination: "/constructeur-maison-individuelle-nord/villeneuve-dascq", permanent: true },
+
     ];
   },
 };
