@@ -10,32 +10,6 @@ export const metadata: Metadata = {
 
 const infos = [
   {
-    label: "Adresse",
-    value: "17 rue du Plouick\n59133 Phalempin",
-    icon: (
-      <svg
-        className="w-5 h-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>
-    ),
-  },
-  {
     label: "Zone d'intervention",
     value: "Nord, Pas-de-Calais\nHauts-de-France",
     icon: (
@@ -99,9 +73,9 @@ export default function ContactPage() {
       {/* Contact */}
       <section className="py-20 px-4" aria-label="Coordonnées et formulaire de contact">
         <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-5 gap-16">
+          <div className="grid lg:grid-cols-5 gap-10 lg:gap-16">
             {/* Infos */}
-            <aside className="lg:col-span-2 space-y-8" aria-labelledby="infos-title">
+            <aside className="lg:col-span-2 space-y-8 order-2 lg:order-1" aria-labelledby="infos-title">
               <h2
                 id="infos-title"
                 className="font-display text-xl font-bold text-navy"
@@ -142,7 +116,7 @@ export default function ContactPage() {
             </aside>
 
             {/* Formulaire */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 order-1 lg:order-2">
               <h2 className="font-display text-xl font-bold text-navy mb-8">
                 Envoyez-nous un message
               </h2>

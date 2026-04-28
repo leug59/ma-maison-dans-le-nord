@@ -176,12 +176,12 @@ export default function HomePage() {
               <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-6">
                 Constructeur de maison — Hauts-de-France
               </p>
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1]">
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight sm:leading-[1.1]">
                 Construisez la maison
-                <br />
-                <span className="text-gold">de vos rêves</span>
-                <br />
-                dans le Nord
+                <br className="hidden sm:inline" />
+                <span className="text-gold"> de vos rêves</span>
+                <br className="hidden sm:inline" />
+                {" "}dans le Nord
               </h1>
               <p className="text-white/70 text-lg sm:text-xl mb-10 leading-relaxed">
                 Ma Maison dans le Nord sélectionne et met en relation les
@@ -400,7 +400,7 @@ export default function HomePage() {
 
       {/* À propos teaser */}
       <section className="bg-navy py-24 px-4 sm:px-6 lg:px-8" aria-labelledby="about-title">
-        <div className="max-w-7xl mx-auto max-w-3xl">
+        <div className="max-w-3xl mx-auto">
           <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-4">
             Qui sommes-nous
           </p>

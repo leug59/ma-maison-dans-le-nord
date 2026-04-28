@@ -38,9 +38,9 @@ export default function DevisPage() {
       {/* Formulaire + avantages */}
       <section className="py-20 px-4" aria-label="Formulaire de demande de devis">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-3 gap-16">
+          <div className="grid lg:grid-cols-3 gap-10 lg:gap-16">
             {/* Sidebar avantages */}
-            <aside aria-labelledby="avantages-title">
+            <aside className="order-2 lg:order-1" aria-labelledby="avantages-title">
               <h2
                 id="avantages-title"
                 className="font-display text-xl font-bold text-navy mb-6"
@@ -98,7 +98,7 @@ export default function DevisPage() {
             </aside>
 
             {/* Formulaire */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 order-1 lg:order-2">
               <DevisForm />
             </div>
           </div>

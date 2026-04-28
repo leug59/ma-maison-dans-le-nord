@@ -40,14 +40,10 @@ export default function Footer() {
                 <span className="text-gold">dans le Nord</span>
               </span>
             </Link>
-            <p className="text-white/60 text-sm leading-relaxed mb-6">
+            <p className="text-white/60 text-sm leading-relaxed">
               Votre spécialiste de la mise en relation avec les meilleurs
               constructeurs de maisons individuelles des Hauts-de-France.
             </p>
-            <address className="not-italic text-white/60 text-sm space-y-1">
-              <p>17 rue du Plouick</p>
-              <p>59133 Phalempin</p>
-            </address>
           </div>
 
           {/* Maisons */}
