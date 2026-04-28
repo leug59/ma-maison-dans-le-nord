@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 import Navigation from "./_components/Navigation";
 import Footer from "./_components/Footer";
@@ -58,8 +59,26 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col font-sans antialiased">
         <Navigation />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-20 md:pb-0">{children}</main>
         <Footer />
+        {/* Floating CTA — mobile only */}
+        <Link
+          href="/devis"
+          className="fixed bottom-5 right-4 z-40 md:hidden flex items-center gap-2 px-5 py-3 bg-[#c8922a] text-white text-sm font-semibold rounded-xl shadow-lg shadow-black/25 hover:brightness-110 transition-all"
+          aria-label="Demander un devis gratuit"
+        >
+          <svg
+            className="w-4 h-4 shrink-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+            aria-hidden="true"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Devis gratuit
+        </Link>
       </body>
     </html>
   );
