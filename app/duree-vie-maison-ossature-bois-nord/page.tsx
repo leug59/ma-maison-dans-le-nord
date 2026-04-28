@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Quelle est la durée de vie d'une maison en ossature bois dans le Nord ?",
   description: "Idées reçues, facteurs de longévité, entretien : découvrez pourquoi une maison en ossature bois dans le Nord peut durer une centaine d'années.",
   alternates: { canonical: "/duree-vie-maison-ossature-bois-nord" },
+  openGraph: buildOpenGraph("/duree-vie-maison-ossature-bois-nord", "article"),
 };
 
 export default function DureeVieBoisPage() {
@@ -23,7 +26,7 @@ export default function DureeVieBoisPage() {
       <section className="px-4 -mt-8 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="relative h-72 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
-            <Image src="/images/maison-bois-2.jpg" alt="Maison en ossature bois dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
+            <Image src="/images/maison-bois-2.jpg" alt="Maison en ossature bois durable et bien isolée dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
           </div>
         </div>
       </section>

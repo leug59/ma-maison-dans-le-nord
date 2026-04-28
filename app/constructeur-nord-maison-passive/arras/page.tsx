@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison passive à Arras — Trouver le meilleur !",
   description:
     "Maison passive à Arras, ville UNESCO du Pas-de-Calais. Constructeurs certifiés, devis gratuit, aide à la recherche de terrain. Économies d'énergie maximales.",
   alternates: { canonical: "/constructeur-nord-maison-passive/arras" },
+  openGraph: buildOpenGraph("/constructeur-nord-maison-passive/arras", "website"),
 };
 
 const data: CityMaisonData = {

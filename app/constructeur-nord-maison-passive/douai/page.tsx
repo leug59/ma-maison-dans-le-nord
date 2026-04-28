@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison passive à Douai — Trouver le meilleur",
   description:
     "Maison passive à Douai, entre nature et culture. Constructeurs qualifiés et certifiés. Réduisez vos factures d'énergie au minimum. Devis gratuit.",
   alternates: { canonical: "/constructeur-nord-maison-passive/douai" },
+  openGraph: buildOpenGraph("/constructeur-nord-maison-passive/douai", "website"),
 };
 
 const data: CityMaisonData = {

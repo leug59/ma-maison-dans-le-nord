@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur de maison contemporaine dans le Nord : faire le bon choix",
   description:
     "Vous rêvez d'une maison moderne dans le Nord ? Trouvez votre constructeur de maison contemporaine dans le Nord-Pas-de-Calais grâce à notre réseau de partenaires locaux.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord" },
+  openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord", "website"),
 };
 
 export default function MaisonContemporainePage() {

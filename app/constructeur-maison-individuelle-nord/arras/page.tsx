@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison individuelle à Arras — Sur mesure",
   description:
     "Maison individuelle à Arras (Pas-de-Calais) : piscines, golf, arts, culture. Constructeurs sélectionnés pour leur sérieux. Devis gratuit et sans engagement.",
   alternates: { canonical: "/constructeur-maison-individuelle-nord/arras" },
+  openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord/arras", "website"),
 };
 
 const data: CityMaisonData = {

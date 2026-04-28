@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Comment trouver et choisir le terrain idéal pour construire dans le Nord ?",
   description: "Superficie, situation, configuration, viabilisation, prix, CU, PLU : tous les critères pour trouver et choisir votre terrain constructible dans le Nord.",
   alternates: { canonical: "/choisir-terrain-a-vendre-nord" },
+  openGraph: buildOpenGraph("/choisir-terrain-a-vendre-nord", "article"),
 };
 
 export default function ChoisirTerrainPage() {

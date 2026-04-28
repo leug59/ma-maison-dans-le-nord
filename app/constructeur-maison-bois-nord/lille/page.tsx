@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison ossature bois à Lille — 100 % sur mesure",
   description:
     "Construisez votre maison à ossature bois à Lille et dans la MEL. Écologique, rapide, performante. La métropole encourage les constructions durables. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/lille" },
+  openGraph: buildOpenGraph("/constructeur-maison-bois-nord/lille", "website"),
 };
 
 const data: CityMaisonData = {

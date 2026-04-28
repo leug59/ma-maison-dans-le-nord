@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Béthune — Smart City",
   description:
     "Maison traditionnelle à Béthune, Smart City depuis 2016 : écologie, digital, bien-être. Constructeurs qualifiés pour un projet personnalisé. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-traditionnelle-nord/bethune" },
+  openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/bethune", "website"),
 };
 
 const data: CityMaisonData = {

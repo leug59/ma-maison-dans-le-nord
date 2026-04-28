@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison individuelle à Douai — Projet sur mesure",
   description:
     "Maison individuelle à Douai : pistes cyclables, Évéole bus, parking gratuit le samedi. Constructeurs sélectionnés sur le volet. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-individuelle-nord/douai" },
+  openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord/douai", "website"),
 };
 
 const data: CityMaisonData = {

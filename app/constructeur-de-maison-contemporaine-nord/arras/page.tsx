@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Arras — Projet sur mesure",
   description:
     "Maison contemporaine à Arras : quartiers Baudimont, Ronville, Université, Jaurès… Architecture design, économies de délais. Devis gratuit.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/arras" },
+  openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/arras", "website"),
 };
 
 const data: CityMaisonData = {

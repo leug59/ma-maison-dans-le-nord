@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison ossature bois à Villeneuve-d'Ascq",
   description:
     "Maison à ossature bois à Villeneuve-d'Ascq (63 000 hab.), 2e commune de la MEL. Construction écologique et personnalisée. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/villeneuve-dascq" },
+  openGraph: buildOpenGraph("/constructeur-maison-bois-nord/villeneuve-dascq", "website"),
 };
 
 const data: CityMaisonData = {

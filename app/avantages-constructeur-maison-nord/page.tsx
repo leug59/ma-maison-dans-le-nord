@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Pourquoi choisir un constructeur de maison individuelle dans le Nord ?",
   description: "7 bonnes raisons de faire appel à un constructeur de maison individuelle dans le Nord : sur-mesure, accompagnement, délais, prix, terrain et plus.",
   alternates: { canonical: "/avantages-constructeur-maison-nord" },
+  openGraph: buildOpenGraph("/avantages-constructeur-maison-nord", "article"),
 };
 
 function CheckItem({ text }: { text: string }) {
@@ -111,7 +114,7 @@ export default function AvantagesConstructeurPage() {
       <section className="px-4 -mt-8 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="relative h-72 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
-            <Image src="/images/maison-individuelle-2.jpg" alt="Construction maison individuelle dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
+            <Image src="/images/maison-individuelle-2.jpg" alt="Avantages de faire construire avec un constructeur dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
           </div>
         </div>
       </section>

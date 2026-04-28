@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Béthune — Sur mesure",
   description:
     "Construisez votre maison plain-pied à Béthune, ville dynamique du Pas-de-Calais. Commerces, transports, calme et dynamisme. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-plain-pied-nord/bethune" },
+  openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/bethune", "website"),
 };
 
 const data: CityMaisonData = {

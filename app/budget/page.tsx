@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Quel budget pour une construction de maison dans le Nord ?",
   description: "Prix moyen terrain et construction dans le Nord, variables qui font fluctuer le budget : terrain, architecture, superficie, matériaux, chauffage, finitions.",
   alternates: { canonical: "/budget" },
+  openGraph: buildOpenGraph("/budget", "website"),
 };
 
 export default function BudgetPage() {
@@ -23,7 +26,7 @@ export default function BudgetPage() {
       <section className="px-4 -mt-8 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="relative h-72 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
-            <Image src="/images/budget-maison.png" alt="Budget construction maison dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
+            <Image src="/images/budget-maison.png" alt="Estimation du coût de construction d'une maison neuve dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
           </div>
         </div>
       </section>

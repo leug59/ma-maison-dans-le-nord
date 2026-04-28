@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Lille — Projet personnalisé",
   description:
     "Construisez votre maison plain-pied à Lille et dans la métropole. Accessible, économique à chauffer et entretenir. Mise en relation gratuite avec nos constructeurs.",
   alternates: { canonical: "/constructeur-maison-plain-pied-nord/lille" },
+  openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/lille", "website"),
 };
 
 const data: CityMaisonData = {

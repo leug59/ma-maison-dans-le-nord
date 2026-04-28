@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Maison connectée : quelle domotique prévoir pour sa construction dans le Nord ?",
   description: "Volets, gestion énergie, éclairages, sécurité, contrôle d'accès : tout sur la domotique pour la construction de votre maison connectée dans le Nord.",
   alternates: { canonical: "/construction-maison-connectee" },
+  openGraph: buildOpenGraph("/construction-maison-connectee", "article"),
 };
 
 export default function MaisonConnecteePage() {

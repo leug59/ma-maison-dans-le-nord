@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison passive à Lens — Projet 100 % personnalisé",
   description:
     "Maison passive à Lens, ville du Louvre-Lens. Constructeurs certifiés, aide à la recherche de terrain. Économies d'énergie maximales dans le Nord. Devis gratuit.",
   alternates: { canonical: "/constructeur-nord-maison-passive/lens" },
+  openGraph: buildOpenGraph("/constructeur-nord-maison-passive/lens", "website"),
 };
 
 const data: CityMaisonData = {

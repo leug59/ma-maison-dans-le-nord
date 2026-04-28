@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur de maison traditionnelle dans le Nord : ce qu'il faut savoir",
   description:
     "Façade en briques rouges, toit pentu, menuiseries foncées : découvrez les caractéristiques d'une maison traditionnelle du Nord et comment trouver le bon constructeur.",
   alternates: { canonical: "/constructeur-maison-traditionnelle-nord" },
+  openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord", "website"),
 };
 
 export default function MaisonTraditionnellePage() {

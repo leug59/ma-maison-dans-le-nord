@@ -34,6 +34,14 @@ export const metadata: Metadata = {
     siteName: "Ma Maison dans le Nord",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "/images/hero-maison-nord.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Constructeur de maison individuelle dans le Nord - Ma Maison dans le Nord",
+      },
+    ],
   },
   alternates: {
     canonical: "/",

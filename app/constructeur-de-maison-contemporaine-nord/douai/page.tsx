@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Douai — Projet sur mesure",
   description:
     "Maison contemporaine à Douai : 1h35 de CDG, Louvre-Lens, Musée de la Chartreuse. Partenaires sélectionnés, CCMI, garantie décennale. Devis gratuit.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/douai" },
+  openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/douai", "website"),
 };
 
 const data: CityMaisonData = {

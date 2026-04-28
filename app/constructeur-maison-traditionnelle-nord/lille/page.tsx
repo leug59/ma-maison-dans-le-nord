@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Lille — Architecture flamande",
   description:
     "Maison traditionnelle à Lille : briques rouges, toits pentus, chiens assis — l'architecture flamande emblématique du Nord. Constructeurs qualifiés. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-traditionnelle-nord/lille" },
+  openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/lille", "website"),
 };
 
 const data: CityMaisonData = {

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Comment trouver son constructeur de maison cubique dans le Nord ?",
   description: "Découvrez les caractéristiques et avantages d'une maison cubique dans le Nord, et comment trouver le bon constructeur pour votre projet.",
   alternates: { canonical: "/constructeur-maison-cubique-nord" },
+  openGraph: buildOpenGraph("/constructeur-maison-cubique-nord", "website"),
 };
 
 export default function MaisonCubiquePage() {

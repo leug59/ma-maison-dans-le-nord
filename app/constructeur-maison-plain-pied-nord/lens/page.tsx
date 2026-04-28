@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Lens — Projet personnalisé",
   description:
     "Construisez votre maison plain-pied à Lens, ville du Louvre-Lens. Chauffage facile sur un seul niveau, accessibilité optimale. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-plain-pied-nord/lens" },
+  openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/lens", "website"),
 };
 
 const data: CityMaisonData = {

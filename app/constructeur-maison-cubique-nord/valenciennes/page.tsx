@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison cubique à Valenciennes — Projets sur mesure",
   description:
     "Construisez votre maison cubique à Valenciennes, 5e centre-ville le plus dynamique de France. Architecture contemporaine personnalisée. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-cubique-nord/valenciennes" },
+  openGraph: buildOpenGraph("/constructeur-maison-cubique-nord/valenciennes", "website"),
 };
 
 const data: CityMaisonData = {

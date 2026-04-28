@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison cubique à Arras — Projet sur mesure",
   description:
     "Construisez votre maison cubique à Arras, ville du Pas-de-Calais à 45 km de Lille. Architecture géométrique 100 % personnalisée. Mise en relation gratuite.",
   alternates: { canonical: "/constructeur-maison-cubique-nord/arras" },
+  openGraph: buildOpenGraph("/constructeur-maison-cubique-nord/arras", "website"),
 };
 
 const data: CityMaisonData = {

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Douai — Briques et caractère",
   description:
     "Maison traditionnelle à Douai : beffroi UNESCO, villas Art Déco, briques rouges et toits noirs. Constructeurs locaux, budget respecté. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-traditionnelle-nord/douai" },
+  openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/douai", "website"),
 };
 
 const data: CityMaisonData = {

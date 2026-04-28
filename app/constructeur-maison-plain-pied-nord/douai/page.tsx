@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Douai — Projet personnalisé",
   description:
     "Construisez votre maison plain-pied à Douai dans un cadre de vie idyllique. Facile à chauffer et entretenir dans le climat du Nord. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-plain-pied-nord/douai" },
+  openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/douai", "website"),
 };
 
 const data: CityMaisonData = {

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur de maison individuelle dans le Nord",
   description: "Définition, garanties, critères de choix : tout sur la construction de maison individuelle dans le Nord et comment sélectionner le bon constructeur.",
   alternates: { canonical: "/constructeur-maison-individuelle-nord" },
+  openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord", "website"),
 };
 
 function CheckItem({ text }: { text: string }) {
@@ -34,7 +37,7 @@ export default function MaisonIndividuellePage() {
       <section className="px-4 -mt-8 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="relative h-72 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
-            <Image src="/images/maison-individuelle.jpg" alt="Maison individuelle dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
+            <Image src="/images/maison-individuelle.jpg" alt="Constructeur maison individuelle sur mesure dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
           </div>
         </div>
       </section>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title:
@@ -8,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "Ma Maison dans le Nord sélectionne les meilleurs constructeurs de maisons individuelles des Hauts-de-France. Projets 100% sur mesure à Lille, dans le Nord et le Pas-de-Calais. Devis gratuit.",
   alternates: { canonical: "/" },
+  openGraph: buildOpenGraph("/", "website"),
 };
 
 const jsonLd = {
@@ -67,42 +70,49 @@ const maisonTypes = [
     label: "Maison traditionnelle",
     href: "/constructeur-maison-traditionnelle-nord",
     image: "/images/maison-traditionnelle.jpg",
+    alt: "Maison traditionnelle en briques rouges dans les Hauts-de-France",
     description: "Façade en briques rouges, toit pentu, charme nordiste authentique.",
   },
   {
     label: "Maison contemporaine",
     href: "/constructeur-de-maison-contemporaine-nord",
     image: "/images/maison-contemporaine.jpg",
+    alt: "Maison contemporaine aux lignes modernes dans le Nord",
     description: "Lignes design, matériaux dernière génération, luminosité optimisée.",
   },
   {
     label: "Maison cubique",
     href: "/constructeur-maison-cubique-nord",
     image: "/images/maison-cubique.jpg",
+    alt: "Maison cubique avec toit-terrasse dans le Nord",
     description: "Architecture épurée, toits-terrasses, esthétique ultra-moderne.",
   },
   {
     label: "Ossature bois",
     href: "/constructeur-maison-bois-nord",
     image: "/images/maison-bois.jpg",
+    alt: "Maison en ossature bois écologique dans les Hauts-de-France",
     description: "Écologique, économe en énergie, jusqu'à 10% d'espace habitable supplémentaire.",
   },
   {
     label: "Plain-pied",
     href: "/constructeur-maison-plain-pied-nord",
     image: "/images/maison-plain-pied.jpg",
+    alt: "Maison plain-pied accessible dans le Nord",
     description: "Accessibilité totale, vie pratique, idéale pour toute la famille.",
   },
   {
     label: "Maison passive",
     href: "/constructeur-nord-maison-passive",
     image: "/images/maison-passive.jpg",
+    alt: "Maison passive basse consommation dans le Nord",
     description: "Performances énergétiques exceptionnelles, chauffage quasi nul.",
   },
   {
     label: "Maison individuelle",
     href: "/constructeur-maison-individuelle-nord",
     image: "/images/maison-individuelle.jpg",
+    alt: "Maison individuelle sur mesure dans les Hauts-de-France",
     description: "Votre projet unique, libre de toute contrainte de lotissement.",
   },
 ];
@@ -209,7 +219,7 @@ export default function HomePage() {
               <div className="relative h-[480px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/hero-maison-nord.jpg"
-                  alt="Maison individuelle dans le Nord construite par nos partenaires"
+                  alt="Constructeur de maison individuelle dans le Nord — Ma Maison dans le Nord"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1280px) 50vw, 600px"
@@ -301,7 +311,7 @@ export default function HomePage() {
                 <div className="relative h-40 overflow-hidden">
                   <Image
                     src={type.image}
-                    alt={type.label}
+                    alt={type.alt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

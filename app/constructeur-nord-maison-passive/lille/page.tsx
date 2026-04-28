@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison passive à Lille — Projet 100 % sur mesure",
   description:
     "Construisez votre maison passive à Lille : moins de 15 kWh/m²/an, triple vitrage, VMC double flux. Économies massives sur vos factures. Devis gratuit.",
   alternates: { canonical: "/constructeur-nord-maison-passive/lille" },
+  openGraph: buildOpenGraph("/constructeur-nord-maison-passive/lille", "website"),
 };
 
 const data: CityMaisonData = {

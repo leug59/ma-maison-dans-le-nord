@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison ossature bois à Douai — 100 % sur mesure",
   description:
     "Maison à ossature bois à Douai, ville dynamique à 20 min de Lille. Construction écologique avec garantie de prix et de délais. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/douai" },
+  openGraph: buildOpenGraph("/constructeur-maison-bois-nord/douai", "website"),
 };
 
 const data: CityMaisonData = {

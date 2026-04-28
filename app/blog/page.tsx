@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Blog — Conseils construction de maison dans le Nord",
   description:
     "Guides et conseils sur la construction de maison individuelle dans les Hauts-de-France : durée de vie ossature bois, choix du terrain, systèmes de chauffage, domotique.",
   alternates: { canonical: "/blog" },
+  openGraph: buildOpenGraph("/blog", "website"),
 };
 
 const articles = [

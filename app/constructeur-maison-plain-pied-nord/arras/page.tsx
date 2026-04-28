@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Arras — Sur mesure",
   description:
     "Construisez votre maison plain-pied à Arras, capitale du Pas-de-Calais. 34 % des habitants sont propriétaires. Projet 100 % personnalisé. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-plain-pied-nord/arras" },
+  openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/arras", "website"),
 };
 
 const data: CityMaisonData = {

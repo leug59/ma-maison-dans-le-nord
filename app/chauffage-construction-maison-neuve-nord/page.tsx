@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Quel système de chauffage choisir pour la construction de sa maison dans le Nord ?",
   description: "PAC aérothermique, géothermique, poêle à bois ou granulés, électrique, maison passive : comparatif complet des systèmes de chauffage pour une maison neuve dans le Nord.",
   alternates: { canonical: "/chauffage-construction-maison-neuve-nord" },
+  openGraph: buildOpenGraph("/chauffage-construction-maison-neuve-nord", "article"),
 };
 
 export default function ChauffagePage() {
@@ -23,7 +26,7 @@ export default function ChauffagePage() {
       <section className="px-4 -mt-8 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="relative h-72 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
-            <Image src="/images/cta-banner.jpg" alt="Chauffage maison neuve dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
+            <Image src="/images/cta-banner.jpg" alt="Système de chauffage pour construction de maison neuve dans le Nord" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1024px" priority />
           </div>
         </div>
       </section>

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Lille — Satisfaction garantie",
   description:
     "Maison contemporaine à Lille, capitale européenne de la culture 2004. Lignes épurées, grandes baies vitrées, matériaux modernes. Devis gratuit.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/lille" },
+  openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/lille", "website"),
 };
 
 const data: CityMaisonData = {

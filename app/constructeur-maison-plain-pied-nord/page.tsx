@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Comment choisir son constructeur de maison plain-pied dans le Nord ?",
   description: "Maison plain-pied dans le Nord : avantages, construction, choix du constructeur. Accessible, économique, pratique pour toute la famille.",
   alternates: { canonical: "/constructeur-maison-plain-pied-nord" },
+  openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord", "website"),
 };
 
 function CheckItem({ text }: { text: string }) {

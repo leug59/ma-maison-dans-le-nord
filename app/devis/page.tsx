@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import DevisForm from "@/app/_components/DevisForm";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Demander un devis gratuit — Construction de maison dans le Nord",
   description:
     "Décrivez votre projet de maison individuelle dans les Hauts-de-France et recevez une mise en relation gratuite avec nos constructeurs partenaires. Devis sans engagement.",
   alternates: { canonical: "/devis" },
+  openGraph: buildOpenGraph("/devis", "website"),
 };
 
 const avantages = [

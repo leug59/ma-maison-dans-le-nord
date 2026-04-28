@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison passive à Valenciennes — Notre sélection",
   description:
     "Maison passive à Valenciennes, l'une des villes les plus dynamiques de France. Constructeurs sélectionnés, aide terrain, devis rapide. Économies garanties.",
   alternates: { canonical: "/constructeur-nord-maison-passive/valenciennes" },
+  openGraph: buildOpenGraph("/constructeur-nord-maison-passive/valenciennes", "website"),
 };
 
 const data: CityMaisonData = {

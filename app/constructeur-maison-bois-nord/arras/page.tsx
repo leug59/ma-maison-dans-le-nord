@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison ossature bois à Arras — Projet écologique",
   description:
     "Maison à ossature bois à Arras, capitale du Pas-de-Calais. Construction écologique, rapide et performante. Partenaires expérimentés. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/arras" },
+  openGraph: buildOpenGraph("/constructeur-maison-bois-nord/arras", "website"),
 };
 
 const data: CityMaisonData = {

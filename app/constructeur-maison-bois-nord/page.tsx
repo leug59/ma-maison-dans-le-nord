@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Construction en ossature bois dans le Nord : avantages et inconvénients",
   description: "Maison à ossature bois dans le Nord : caractéristiques, avantages (énergie, écologie, délais) et inconvénients. Trouvez votre constructeur MOB.",
   alternates: { canonical: "/constructeur-maison-bois-nord" },
+  openGraph: buildOpenGraph("/constructeur-maison-bois-nord", "website"),
 };
 
 function CheckItem({ text }: { text: string }) {

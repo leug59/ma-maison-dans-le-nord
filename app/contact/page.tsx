@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import ContactForm from "@/app/_components/ContactForm";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Contact — Ma Maison dans le Nord",
   description:
     "Contactez l'équipe de Ma Maison dans le Nord pour toute question sur votre projet de construction de maison individuelle dans les Hauts-de-France.",
   alternates: { canonical: "/contact" },
+  openGraph: buildOpenGraph("/contact", "website"),
 };
 
 const infos = [

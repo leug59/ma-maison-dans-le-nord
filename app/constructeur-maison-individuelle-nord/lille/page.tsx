@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison individuelle à Lille — 100 % sur mesure",
   description:
     "Construisez votre maison individuelle à Lille : Bois-Blancs, Faubourg de Béthune, Lille-Sud, Fives… Savoir-faire local et accompagnement personnalisé. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-individuelle-nord/lille" },
+  openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord/lille", "website"),
 };
 
 const data: CityMaisonData = {

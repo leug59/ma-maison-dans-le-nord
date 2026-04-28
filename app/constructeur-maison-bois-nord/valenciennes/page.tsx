@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison ossature bois à Valenciennes — Écologique",
   description:
     "Maison à ossature bois à Valenciennes et dans l'arrondissement (Marly, Anzin, Onnaing…). Construction durable et personnalisée. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/valenciennes" },
+  openGraph: buildOpenGraph("/constructeur-maison-bois-nord/valenciennes", "website"),
 };
 
 const data: CityMaisonData = {

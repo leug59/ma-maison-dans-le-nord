@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Béthune — Projet sur mesure",
   description:
     "Maison contemporaine à Béthune (Pas-de-Calais) : parcs, écoles, quartiers variés. Architecture design, matériaux modernes. Devis gratuit.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/bethune" },
+  openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/bethune", "website"),
 };
 
 const data: CityMaisonData = {

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import CityMaisonPage, { type CityMaisonData } from "@/app/_components/CityMaisonPage";
+import { buildOpenGraph } from "@/app/_lib/og";
+
 
 export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Valenciennes — Sur mesure",
   description:
     "Construisez votre maison plain-pied à Valenciennes, ville dynamique du Nord à cadre de vie idyllique. Accessible et économique. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-plain-pied-nord/valenciennes" },
+  openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/valenciennes", "website"),
 };
 
 const data: CityMaisonData = {
