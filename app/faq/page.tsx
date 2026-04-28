@@ -1,221 +1,139 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import FAQAccordion from "@/app/_components/FAQAccordion";
 
 export const metadata: Metadata = {
-  title: "FAQ — Questions fréquentes sur la construction de maison dans le Nord",
-  description:
-    "Toutes les réponses à vos questions sur la construction de maison individuelle dans les Hauts-de-France : budget, terrain, types de maisons, étapes, délais.",
+  title: "FAQ de la construction de maison dans le Nord",
+  description: "Toutes les réponses à vos questions sur la construction de maison dans le Nord : constructeur, budget, terrain, types de maisons, démarches.",
   alternates: { canonical: "/faq" },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Puis-je avoir une maison sur-mesure ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Bien sûr et c'est le but ! Avec nos partenaires constructeurs de maisons dans le Nord, vous êtes certain d'avoir une maison unique et entièrement personnalisée selon vos souhaits.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Quel budget prévoir pour construire dans le Nord ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "En 2024, le prix moyen d'un terrain dans le Nord est d'environ 80 € le m² et celui d'une maison neuve de 1 350 € le m². Ces chiffres varient selon la commune, le type de maison et les finitions choisies.",
-      },
-    },
-  ],
-};
-
-const categories = [
+const faqItems = [
   {
-    titre: "Général & mise en relation",
-    questions: [
-      {
-        question: "Puis-je avoir une maison 100% sur mesure ?",
-        answer:
-          "Bien sûr et c'est précisément notre raison d'être ! Avec nos constructeurs partenaires dans le Nord, vous êtes certain d'avoir une maison unique et entièrement personnalisée : plans, matériaux, finitions, équipements… tout est conçu selon vos souhaits et votre mode de vie.",
-      },
-      {
-        question: "Quels sont les avantages d'un constructeur local dans le Nord ?",
-        answer:
-          "Un constructeur local connaît parfaitement les spécificités du territoire : réglementations urbanistiques, types de terrains, conditions météorologiques, architectures régionales. Il intervient rapidement sur votre chantier et bénéficie de relations solides avec les artisans et fournisseurs locaux.",
-      },
-      {
-        question: "Pourquoi choisir un constructeur plutôt que l'auto-construction ?",
-        answer:
-          "Faire appel à un constructeur professionnel vous garantit le respect des délais (Contrat de Construction de Maison Individuelle – CCMI), une maîtrise budgétaire préalable, et une gestion complète du chantier. Vous bénéficiez également des garanties légales : garantie de parfait achèvement, garantie biennale et garantie décennale.",
-      },
-      {
-        question: "Comment choisir le meilleur constructeur pour mon projet ?",
-        answer:
-          "Le choix dépend du type de construction souhaité, de votre budget et de votre localisation. C'est exactement pour cela que nous existons : notre équipe analyse votre projet et vous oriente vers le constructeur le plus adapté parmi notre réseau de partenaires sélectionnés.",
-      },
-      {
-        question: "Qui contacter pour démarrer mon projet de construction ?",
-        answer:
-          "Il vous suffit de remplir notre formulaire de demande de devis en décrivant vos attentes. Notre équipe analyse votre projet et vous met en relation avec le constructeur adapté, qui devient votre interlocuteur unique tout au long du projet.",
-      },
-    ],
+    question: "Puis-je avoir une maison sur-mesure avec un constructeur du Nord ?",
+    answer: "Bien sûr et c'est le but ! Avec nos partenaires, constructeurs de maisons dans le Nord, vous êtes certain d'avoir une maison unique et personnalisée.",
   },
   {
-    titre: "Terrain & localisation",
-    questions: [
-      {
-        question: "Comment trouver un terrain à bâtir dans le Nord ?",
-        answer:
-          "Plusieurs sources existent : les annonces internet (SeLoger, LeBonCoin, PAP), les agences immobilières locales, les mairies (Plan Local d'Urbanisme), les notaires, ou directement votre constructeur qui dispose souvent de terrains disponibles dans son secteur.",
-      },
-      {
-        question: "Comment choisir un bon terrain pour construire ?",
-        answer:
-          "Évaluez attentivement la localisation, la superficie, le prix, la configuration (pente, orientation), et si le terrain est viabilisé (raccordé aux réseaux). Consultez le PLU de la commune, vérifiez les droits à construire avec un Certificat d'Urbanisme, et visitez le terrain à différents moments de la journée.",
-      },
-      {
-        question: "Quel est le prix moyen d'un terrain dans le Nord ?",
-        answer:
-          "En 2024, le prix moyen d'un terrain constructible dans le Nord est d'environ 80 € le m², soit 32 000 € pour un terrain de 400 m². Ce prix varie significativement selon la commune : les secteurs proches de Lille sont naturellement plus chers.",
-      },
-    ],
+    question: "Quels sont les avantages à faire appel à un constructeur de maison individuelle dans le Nord ?",
+    answer: "Ils sont nombreux : le respect de votre projet personnalisé et sur-mesure ; les constructeurs sélectionnés par nos soins sont qualifiés dans leur domaine et leur professionnalisme n'est plus à prouver ; un coût de construction calculé au plus juste et respectant votre budget ; des propositions de terrains et une aide au choix final, selon votre projet ; la garantie d'une construction finie dans les temps.",
   },
   {
-    titre: "Budget & financement",
-    questions: [
-      {
-        question: "Quel budget total prévoir pour construire sa maison ?",
-        answer:
-          "En 2024, comptez en moyenne 1 350 € le m² de construction, hors terrain. Pour une maison de 120 m², cela représente environ 160 000 € de construction, auquel s'ajoute le prix du terrain (40 000 – 80 000 €), les frais de notaire et les aménagements extérieurs. Budget total typique : 220 000 – 310 000 €.",
-      },
-      {
-        question: "Qu'est-ce qui fait varier le coût de construction ?",
-        answer:
-          "Le coût dépend principalement du type de maison (traditionnelle, contemporaine, passive…), de la superficie, du prix du terrain, des matériaux choisis, des finitions et équipements intérieurs, et du mode de chauffage. Une maison passive coûte plus cher à construire mais génère de grandes économies d'énergie.",
-      },
-      {
-        question: "Quelles aides financières existent pour construire ?",
-        answer:
-          "Plusieurs dispositifs peuvent vous aider : le Prêt à Taux Zéro (PTZ) sous conditions de ressources, l'éco-prêt à taux zéro pour les constructions performantes, la TVA à taux réduit dans certains cas, et les aides locales (région Hauts-de-France, communes). Votre constructeur peut vous orienter selon votre situation.",
-      },
-    ],
+    question: "Pourquoi choisir un constructeur de maison individuelle dans le Nord plutôt qu'opter pour l'auto-construction ?",
+    answer: "Ces deux modes de constructions sont différents et il faut bien avoir en tête que l'auto-construction ne convient pas à tout le monde. Voici les avantages de faire appel à un constructeur de maison, plutôt que de se lancer soi-même : la garantie d'achèvement des travaux dans les temps (le constructeur est tenu de respecter des délais) ; la maîtrise de votre budget, puisque tout est calculé en amont de votre projet. Pas de mauvaises surprises comme c'est parfois le cas dans l'auto-construction, où on ne pense pas toujours à tout budgétiser ; tout est fait par des professionnels, vous n'avez à vous occuper de rien (ce qui est idéal si vous êtes très occupé et/ou si vous ne vous y connaissez pas en construction).",
   },
   {
-    titre: "Types de maisons",
-    questions: [
-      {
-        question: "Qu'est-ce qu'une maison traditionnelle du Nord ?",
-        answer:
-          "La maison traditionnelle nordiste se distingue par sa façade en briques rouges, son toit à forte pente (souvent à deux pans), ses menuiseries foncées verticales et étroites, et parfois ses chiens-assis caractéristiques. Elle s'intègre parfaitement dans le paysage architectural de la région.",
-      },
-      {
-        question: "Qu'est-ce qu'une maison contemporaine ?",
-        answer:
-          "La maison contemporaine marie lignes épurées et matériaux de dernière génération : enduit clair, bardage bois ou composite, grandes baies vitrées, toit plat ou à faible pente. Elle offre une modularité des espaces, une luminosité optimale et des performances énergétiques souvent supérieures.",
-      },
-      {
-        question: "Quels sont les avantages d'une maison à ossature bois ?",
-        answer:
-          "L'ossature bois offre de nombreux avantages : matériau écologique et renouvelable, excellentes performances thermiques, chantier plus rapide (gain de 3 à 4 mois), légèreté structurelle adaptée aux terrains argileux du Nord, et jusqu'à 10% d'espace habitable supplémentaire par rapport à une construction traditionnelle.",
-      },
-      {
-        question: "Comment fonctionne une maison passive ?",
-        answer:
-          "Une maison passive accumule les calories gratuites (soleil, chaleur des occupants) en hiver pour maintenir une température confortable sans ou avec très peu de chauffage. En été, une VMC double flux avec échangeur thermique assure une température agréable. Dans les Hauts-de-France, les économies d'énergie sont significatives.",
-      },
-    ],
+    question: "Comment choisir le meilleur constructeur de maison dans le Nord-Pas-de-Calais ?",
+    answer: "Cela dépend de votre projet : du type de construction que vous souhaitez, de votre budget, et encore d'autres paramètres. Si vous avez besoin d'aide, contactez-nous. Nous vous accompagnerons dans le choix du meilleur constructeur de maison dans le Nord, celui qui respectera totalement vos souhaits.",
   },
   {
-    titre: "Construction & délais",
-    questions: [
-      {
-        question: "Quelles démarches entreprendre avant de construire ?",
-        answer:
-          "Les étapes administratives sont : étude de projet avec le constructeur, recherche et obtention de financement, signature du Contrat de Construction de Maison Individuelle (CCMI), et dépôt du permis de construire en mairie. Le constructeur vous accompagne dans toutes ces démarches.",
-      },
-      {
-        question: "Comment se déroule la construction ?",
-        answer:
-          "La construction se divise en trois grandes phases : le gros œuvre (fondations, murs porteurs, charpente, toiture), le second œuvre (isolation, menuiseries extérieures, plomberie, électricité, cloisons) et les finitions intérieures et extérieures. La durée totale varie de 8 à 12 mois.",
-      },
-      {
-        question: "Combien de temps faut-il pour construire une maison ?",
-        answer:
-          "De votre première prise de contact à l'emménagement, comptez en moyenne 14 à 22 mois : 1 à 3 mois pour la conception et le devis, 2 à 4 mois pour l'obtention du permis de construire, et 8 à 12 mois de chantier. Ces délais varient selon la complexité du projet et la commune.",
-      },
-    ],
+    question: "Qui contacter pour faire construire sa maison dans le Nord ?",
+    answer: "Si vous n'avez pas le temps ni l'envie de passer des heures à aller voir plusieurs constructeurs, leur expliquer votre projet et attendre des semaines des devis et des plans, nous avons la solution. Vous nous expliquez vos attentes et nous nous chargeons de vous aiguiller vers le professionnel qui correspond le mieux à votre budget. Vous aurez ainsi un interlocuteur unique : nous ! Nous nous chargeons de faire le travail de recherche du constructeur idéal, à votre place.",
+  },
+  {
+    question: "Comment trouver un terrain à acheter dans le Nord ?",
+    answer: "Bien sûr il y a les annonces sur Internet, les agences immobilières de votre secteur, les mairies, les notaires. Mais vous pouvez aussi vous adresser à un constructeur de maison du Nord, qui pourra vous proposer des terrains adaptés à votre projet et vous aider à sélectionner celui qu'il vous faut.",
+  },
+  {
+    question: "Comment choisir mon futur terrain dans la région Nord-Pas-de-Calais ?",
+    answer: "Plusieurs paramètres entrent en compte dans le choix de votre terrain dans le Nord : la situation, la superficie, le prix, la configuration, le fait qu'il soit viabilisé ou non.",
+  },
+  {
+    question: "Que faire avant de choisir définitivement son terrain ?",
+    answer: "Consultez le PLU, le CU, revenez voir le terrain dans différentes situations, interrogez le voisinage, prévoyez le coût des impôts locaux et surtout, prenez votre temps avant de vous décider !",
+  },
+  {
+    question: "Quel est le budget à prévoir pour la construction de ma maison dans le Nord ?",
+    answer: "En 2021, le prix moyen d'un terrain dans le Nord est de 80 € le m² et celui d'une maison de 1 349 € le m².",
+  },
+  {
+    question: "Quels sont les éléments qui vont faire varier le coût de ma construction ?",
+    answer: "Le type de maison souhaitée, sa superficie, le prix du terrain, les matériaux utilisés, les finitions choisies, les prestations intérieures ainsi que le mode de chauffage, sont autant de paramètres qui peuvent faire fluctuer le budget de votre construction.",
+  },
+  {
+    question: "Quelles sont les démarches à faire lors d'une construction dans le Nord ?",
+    answer: "Tout d'abord : trouver le bon constructeur ! Pour cela, n'hésitez pas à nous contacter, nous sommes là pour vous aider. Ensuite, viendront : l'étude de votre projet (plans, devis) ; le démarchage des banques pour un prêt immobilier, le cas échéant ; la signature du contrat de construction de maison individuelle (CCMI) ; le dépôt du permis de construire. Après obtention de ce dernier, les travaux pourront débuter.",
+  },
+  {
+    question: "Comment se déroule la construction d'une maison ?",
+    answer: "Il y a trois grandes phases dans la construction d'une maison : le gros œuvre, le second œuvre et la réception de votre maison.",
+  },
+  {
+    question: "Quels sont les différents types de constructions dans le Nord ?",
+    answer: "Pour votre type de maison dans le Nord, vous pouvez choisir : une construction traditionnelle, contemporaine, cubique, à ossature bois ou passive.",
+  },
+  {
+    question: "Qu'est-ce qu'une maison traditionnelle du Nord ?",
+    answer: "Une construction typique du Nord se définit comme suit : une façade en briques rouges ; un toit très pentu ; avec un étage, très souvent ; des menuiseries foncées verticales et étroites ; la présence de chien assis, la plupart du temps.",
+  },
+  {
+    question: "Quels sont les avantages de faire construire une maison traditionnelle dans le Nord ?",
+    answer: "Ils sont à la fois esthétiques : continuer à faire vivre l'architecture locale, et se veulent dans le respect de l'environnement : avoir une habitation qui s'inscrit parfaitement dans le paysage nordiste.",
+  },
+  {
+    question: "Qu'est-ce qu'une maison contemporaine ?",
+    answer: "Une maison contemporaine est le mariage de lignes design et de matériaux dernière génération. Elle est habillée d'un enduit clair, de bardage bois ou métallique et pourvue d'un toit plat, le plus souvent. Côté menuiseries : châssis fixes cubiques, fenêtres rectangulaires horizontales ou verticales, grandes baies vitrées et porte d'entrée stylisée sont à l'honneur.",
+  },
+  {
+    question: "Pourquoi choisir une maison contemporaine dans le Nord ?",
+    answer: "Pour sa modularité en termes de matériaux, forme, revêtements de façade, etc. Elle laisse libre cours à votre imagination. C'est aussi un logement respectueux de l'environnement et économique.",
+  },
+  {
+    question: "Qu'est-ce qu'une maison cubique ?",
+    answer: "Ce n'est pas qu'un simple cube, mais une juxtaposition de plusieurs modules, que vous aurez tout le loisir de combiner à l'infini. Les lignes de la maison cubique sont épurées au maximum, il est possible de jouer avec les différents revêtements de façade, sur chacun des modules. L'uniformité que l'on retrouve dans ses formes, contraste avec le mélange des matériaux et des couleurs.",
+  },
+  {
+    question: "Pourquoi faire construire une maison cubique dans le Nord-Pas-de-Calais ?",
+    answer: "Pour son esthétique et son originalité, dans un premier temps. Mais aussi, pour les possibilités infinies d'aménagement intérieur et extérieur, grâce notamment aux toits-terrasses (qui peuvent être végétalisés ou servir de solarium).",
+  },
+  {
+    question: "Quels sont les avantages d'une maison à ossature bois dans le Nord ?",
+    answer: "Une construction en ossature bois dans le Nord offre de nombreux atouts : c'est une maison écologique ; elle permet de faire des économies d'énergie, ce qui a un impact positif sur votre budget ; le temps des travaux est réduit (elle permet un gain de 3-4 mois par rapport à une construction maçonnée) ; les cloisons étant plus minces, il est possible de gagner jusqu'à 10 % d'espace habitable.",
+  },
+  {
+    question: "Comment fonctionne une maison passive ?",
+    answer: "Grâce aux matériaux utilisés, à son exposition au soleil et à sa conception, la maison passive accumule et stocke les sources énergétiques (rayons du soleil, chaleur des habitants, des appareils électroménagers et électriques) à l'intérieur de l'habitation en hiver. En été, l'étanchéité du bâti, son pouvoir isolant et la présence d'une VMC à échangeur thermique permettent de maintenir une température agréable dans la maison.",
+  },
+  {
+    question: "Une maison passive : est-ce vraiment avantageux dans la région Nord ?",
+    answer: "Oui, elle permet de réaliser de belles économies d'énergie et de gagner en confort. En plus, en optant pour ce type de construction, vous faites un joli geste écologique.",
   },
 ];
 
 export default function FAQPage() {
-  const allItems = categories.flatMap((c) => c.questions);
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
-      {/* Hero */}
-      <section className="bg-navy py-24 px-4" aria-label="En-tête">
+      <section className="bg-navy py-24 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-4">
-            Tout ce que vous devez savoir
-          </p>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6">
-            Questions fréquentes
-          </h1>
-          <p className="text-white/70 text-lg sm:text-xl max-w-2xl mx-auto">
-            Retrouvez toutes les réponses à vos questions sur la construction de
-            maison individuelle dans les Hauts-de-France.
-          </p>
+          <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-4">Vos questions, nos réponses</p>
+          <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6">FAQ de la construction de maison dans le Nord</h1>
+          <p className="text-white/70 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-10">Toutes les réponses à vos questions sur la construction de maison dans le Nord.</p>
+          <Link href="/devis" className="inline-block px-8 py-4 bg-gold text-white font-semibold rounded-lg hover:bg-gold-400 transition-colors">Demander un devis gratuit</Link>
         </div>
       </section>
 
-      {/* FAQ par catégories */}
-      <section className="py-20 px-4" aria-label="Questions et réponses">
+      <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto">
-          {categories.map((cat) => (
-            <div key={cat.titre} className="mb-14">
-              <h2 className="font-display text-2xl font-bold text-navy mb-6 pb-4 border-b border-gray-200">
-                {cat.titre}
-              </h2>
-              <FAQAccordion items={cat.questions} />
-            </div>
-          ))}
+          <p className="text-gray-700 text-lg leading-relaxed mb-12">Vous avez un projet de construction et vous vous questionnez sur le choix de votre futur constructeur de maison individuelle dans le Nord, sur le type d&apos;habitation que vous pouvez faire construire ou vous ne savez pas comment trouver un terrain ? Voici toutes les réponses à vos questions.</p>
+          <dl className="space-y-4">
+            {faqItems.map((item, i) => (
+              <div key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                <dt className="px-6 py-5">
+                  <p className="font-semibold text-navy text-base">{item.question}</p>
+                </dt>
+                <dd className="px-6 pb-5 text-gray-600 leading-relaxed border-t border-gray-50 pt-4">{item.answer}</dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-12 text-gray-700 leading-relaxed">Notre équipe est à votre écoute pour vous accompagner dans votre projet de construction de maison individuelle dans le Nord. Osez sauter le pas : contactez-nous !</p>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-gray-50 py-16 px-4" aria-labelledby="faq-cta-title">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2
-            id="faq-cta-title"
-            className="font-display text-2xl font-bold text-navy mb-4"
-          >
-            Votre question n&apos;est pas ici ?
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Notre équipe se fait un plaisir de répondre à toutes vos questions
-            sur la construction de maison dans le Nord.
-          </p>
+      <section className="bg-navy py-20 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="font-display text-3xl font-bold text-white mb-4">Votre projet commence ici</h2>
+          <p className="text-white/70 text-lg mb-8">Vous êtes décidés à faire construire votre maison ? Nous vous mettrons rapidement en contact avec le constructeur qu&apos;il vous faut !</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="px-6 py-3 bg-navy text-white font-semibold rounded-lg hover:bg-navy-800 transition-colors"
-            >
-              Nous contacter
-            </Link>
-            <Link
-              href="/devis"
-              className="px-6 py-3 bg-gold text-white font-semibold rounded-lg hover:bg-gold-400 transition-colors"
-            >
-              Demander un devis
-            </Link>
+            <Link href="/devis" className="px-8 py-4 bg-gold text-white font-semibold rounded-lg hover:bg-gold-400 transition-colors">Demander un devis gratuit</Link>
+            <Link href="/contact" className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-white hover:bg-white/5 transition-colors">Nous contacter</Link>
           </div>
         </div>
       </section>
