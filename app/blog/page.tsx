@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { buildOpenGraph } from "@/app/_lib/og";
 
 
@@ -13,12 +14,31 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "erreurs-construction-maison-nord",
+    titre: "5 erreurs à éviter quand on fait construire dans le Nord",
+    extrait:
+      "Mauvais constructeur, budget sous-estimé, terrain mal étudié… Ces 5 erreurs coûtent cher aux futurs propriétaires nordistes. Comment les éviter avant de signer votre CCMI.",
+    categorie: "Construction",
+    lien: "/erreurs-construction-maison-nord",
+    image: "/images/maison-individuelle.jpg",
+  },
+  {
+    slug: "delais-construction-maison-nord",
+    titre: "Délais de construction : combien de temps pour votre maison dans le Nord ?",
+    extrait:
+      "De la signature du contrat à la remise des clés, comptez en moyenne 12 à 18 mois. Le détail étape par étape et les facteurs nordistes qui allongent les délais.",
+    categorie: "Construction",
+    lien: "/delais-construction-maison-nord",
+    image: "/images/etapes-construction.jpg",
+  },
+  {
     slug: "duree-vie-maison-ossature-bois-nord",
     titre: "Quelle est la durée de vie d'une maison en ossature bois dans le Nord ?",
     extrait:
       "De nombreuses personnes s'interrogent sur la durabilité des maisons en ossature bois par rapport aux constructions traditionnelles. Réponse claire : une maison en ossature bois bien réalisée n'est pas éphémère.",
     categorie: "Ossature bois",
     lien: "/duree-vie-maison-ossature-bois-nord",
+    image: "/images/maison-bois.jpg",
   },
   {
     slug: "choisir-terrain-a-vendre-nord",
@@ -27,6 +47,7 @@ const articles = [
       "Localisation, prix, viabilisation, superficie, exposition… Avant de faire construire, il faut trouver le bon terrain constructible. Tous les critères à évaluer avant de signer.",
     categorie: "Terrain",
     lien: "/choisir-terrain-a-vendre-nord",
+    image: "/images/hero-maison-nord.jpg",
   },
   {
     slug: "chauffage-construction-maison-neuve-nord",
@@ -35,6 +56,7 @@ const articles = [
       "Pompe à chaleur, gaz, bois, énergies renouvelables… Faire le bon choix dès le départ est crucial : revenir en arrière sera difficile et coûteux. Le guide complet pour décider.",
     categorie: "Énergie",
     lien: "/chauffage-construction-maison-neuve-nord",
+    image: "/images/maison-passive.jpg",
   },
   {
     slug: "construction-maison-connectee",
@@ -43,10 +65,11 @@ const articles = [
       "Volets motorisés, chauffage programmable, éclairage intelligent, sécurité… Intégrer la domotique dès la construction est bien plus simple et économique qu'en rénovation.",
     categorie: "Domotique",
     lien: "/construction-maison-connectee",
+    image: "/images/maison-moderne.jpg",
   },
 ];
 
-const categories = ["Tous", "Ossature bois", "Terrain", "Énergie", "Domotique"];
+const categories = ["Tous", "Construction", "Ossature bois", "Terrain", "Énergie", "Domotique"];
 
 export default function BlogPage() {
   return (
@@ -93,19 +116,23 @@ export default function BlogPage() {
       {/* Articles */}
       <section className="py-20 px-4" aria-label="Articles du blog">
         <div className="max-w-7xl mx-auto">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article) => (
               <article
                 key={article.slug}
                 className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
                 aria-labelledby={`article-title-${article.slug}`}
               >
-                {/* Couleur placeholder */}
-                <div
-                  className="h-44 bg-gradient-to-br from-navy to-navy-800 flex items-end p-4"
-                  aria-hidden="true"
-                >
-                  <span className="px-3 py-1 bg-gold text-white text-xs font-semibold rounded-full">
+                <div className="relative h-44 overflow-hidden">
+                  <Image
+                    src={article.image}
+                    alt={article.titre}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-navy/30" aria-hidden="true" />
+                  <span className="absolute bottom-3 left-3 px-3 py-1 bg-gold text-white text-xs font-semibold rounded-full">
                     {article.categorie}
                   </span>
                 </div>

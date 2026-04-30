@@ -175,6 +175,43 @@ export default function ChoisirTerrainPage() {
         </div>
       </section>
 
+      {/* Budget par secteur */}
+      <section className="bg-white py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-3xl font-bold text-navy mb-4">Budget total terrain + construction par secteur dans le Nord</h2>
+          <p className="text-gray-700 leading-relaxed mb-8">Pour anticiper votre enveloppe globale, voici une estimation 2026 combinant prix du terrain (500 m² environ) et coût de construction (120 m² habitables), selon le secteur géographique. Ces fourchettes incluent la construction seule — les frais annexes (notaire, raccordements, taxe d&apos;aménagement, assurance) s&apos;ajoutent en supplément, soit généralement 25 000 à 45 000 € de plus.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm rounded-xl overflow-hidden">
+              <thead>
+                <tr className="bg-navy text-white">
+                  <th className="text-left px-4 py-3 rounded-tl-lg">Secteur</th>
+                  <th className="text-right px-4 py-3">Terrain (~500 m²)</th>
+                  <th className="text-right px-4 py-3">Construction (~120 m²)</th>
+                  <th className="text-right px-4 py-3 rounded-tr-lg">Budget total estimé</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Lille Métropole", "65 000 – 100 000 €", "198 000 – 228 000 €", "263 000 – 328 000 €"],
+                  ["Arras", "42 500 – 60 000 €", "186 000 – 210 000 €", "228 500 – 270 000 €"],
+                  ["Douai", "37 500 – 55 000 €", "180 000 – 204 000 €", "217 500 – 259 000 €"],
+                  ["Valenciennes", "40 000 – 57 500 €", "180 000 – 204 000 €", "220 000 – 261 500 €"],
+                  ["Lens / Liévin", "27 500 – 42 500 €", "174 000 – 198 000 €", "201 500 – 240 500 €"],
+                ].map(([secteur, terrain, construction, total], i) => (
+                  <tr key={secteur} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
+                    <td className="px-4 py-3 text-navy font-semibold">{secteur}</td>
+                    <td className="px-4 py-3 text-right text-gray-700">{terrain}</td>
+                    <td className="px-4 py-3 text-right text-gray-700">{construction}</td>
+                    <td className="px-4 py-3 text-right text-gold font-bold">{total}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-gray-500 text-sm">Estimations 2026 basées sur les prix moyens du marché nord-pas-de-calaisien. Les prix varient selon la commune exacte, la viabilisation et les prestations choisies.</p>
+        </div>
+      </section>
+
       {/* Lire aussi */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">

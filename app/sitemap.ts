@@ -95,6 +95,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/erreurs-construction-maison-nord`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/delais-construction-maison-nord`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
       url: `${baseUrl}/duree-vie-maison-ossature-bois-nord`,
       lastModified,
       changeFrequency: "yearly",

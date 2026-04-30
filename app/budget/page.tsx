@@ -36,13 +36,13 @@ export default function BudgetPage() {
           <h2 className="font-display text-3xl font-bold text-navy mb-6">Quel est le coût actuel d&apos;une construction dans la région Nord-Pas-de-Calais ?</h2>
           <div className="space-y-5 text-gray-700 leading-relaxed">
             <p>L&apos;un des premiers soucis que rencontrent les futurs propriétaires est la question financière. Afin de négocier un prêt immobilier avec votre banquier, vous devez savoir quelle enveloppe budgétaire consacrer à votre projet. Alors, comment estimer au mieux le coût de votre futur logement ? Quels sont les paramètres qui peuvent faire varier le chiffrage d&apos;une construction ? Dans cet article, nous vous donnons des éléments de réponse, afin d&apos;apprécier au mieux quel budget allouer à une construction de maison dans le Nord.</p>
-            <p>Le prix des terrains et de la construction (comprenant les matériaux et la main d&apos;œuvre), ne cessent de fluctuer. La tendance nationale du coût d&apos;un terrain est à l&apos;augmentation : 1 % entre 2018 et 2019. On constate tout de même que le coût du mètre carré tend à s&apos;accroître moins rapidement depuis 3 ans. Pour la construction, la hausse est un peu plus importante : de l&apos;ordre de 2,4 % au niveau national.</p>
+            <p>Les prix des terrains et de la construction ont significativement évolué depuis 2020. En 2026, l&apos;inflation des matériaux, la mise en œuvre de la RE2020 et la tension foncière dans les agglomérations nordistes ont poussé les prix à la hausse. Dans la région Hauts-de-France, le coût de construction a progressé d&apos;environ 25 % en 5 ans, avec des disparités importantes selon les secteurs.</p>
           </div>
           <div className="mt-8 grid sm:grid-cols-3 gap-6">
             {[
-              { label: "Prix moyen d'un terrain (875 m²)", value: "69 885 €", sub: "soit 80 € le m²" },
-              { label: "Prix moyen d'une maison (120 m²)", value: "171 275 €", sub: "soit 1 349 € le m²" },
-              { label: "Budget total moyen", value: "241 160 €", sub: "terrain + construction" },
+              { label: "Prix moyen d'un terrain (600 m²)", value: "72 000 €", sub: "soit 120 € le m² en moyenne" },
+              { label: "Prix moyen d'une maison (120 m²)", value: "210 000 €", sub: "soit 1 750 € le m² en moyenne" },
+              { label: "Budget total moyen", value: "282 000 €", sub: "terrain + construction (hors frais)" },
             ].map((stat) => (
               <div key={stat.label} className="bg-navy rounded-xl p-6 text-center">
                 <p className="text-white/60 text-sm mb-2">{stat.label}</p>
@@ -51,7 +51,7 @@ export default function BudgetPage() {
               </div>
             ))}
           </div>
-          <p className="mt-6 text-gray-500 text-sm">À noter que toutes les données chiffrées mentionnées dans l&apos;article sont issues du site du Ministère de la transition écologique. Les données les plus récentes ont été publiées le 24 novembre 2020 (pour des statistiques concernant les constructions neuves de 2019).</p>
+          <p className="mt-6 text-gray-500 text-sm">Estimations 2026 basées sur les prix constatés dans la région Nord-Pas-de-Calais. Ces chiffres varient selon la commune, les prestations et le type de construction choisi.</p>
         </div>
       </section>
 
@@ -106,10 +106,11 @@ export default function BudgetPage() {
                 </thead>
                 <tbody>
                   {[
-                    ["Gaz", "167 996 €", "1 344 €"],
-                    ["Tout électrique", "172 997 €", "1 380 €"],
-                    ["Électricité et bois en appoint", "164 451 €", "1 296 €"],
-                    ["Énergies renouvelables", "184 432 €", "1 368 €"],
+                    ["Pompe à chaleur air/eau", "225 000 €", "1 875 €"],
+                    ["Tout électrique (radiateurs)", "200 000 €", "1 667 €"],
+                    ["Gaz naturel", "195 000 €", "1 625 €"],
+                    ["Électricité + bois en appoint", "190 000 €", "1 583 €"],
+                    ["Énergies renouvelables (solaire+PAC)", "240 000 €", "2 000 €"],
                   ].map(([mode, prix, m2], i) => (
                     <tr key={mode} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                       <td className="px-4 py-3 text-gray-700">{mode}</td>
@@ -141,9 +142,9 @@ export default function BudgetPage() {
                 </thead>
                 <tbody>
                   {[
-                    ["Maison totalement terminée", "189 789 €", "1 418 €"],
-                    ["Prête à décorer", "170 129 €", "1 353 €"],
-                    ["Hors d'eau hors d'air", "149 010 €", "1 204 €"],
+                    ["Maison totalement terminée", "240 000 €", "2 000 €"],
+                    ["Prête à décorer", "210 000 €", "1 750 €"],
+                    ["Hors d'eau hors d'air", "185 000 €", "1 542 €"],
                   ].map(([finition, prix, m2], i) => (
                     <tr key={finition} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                       <td className="px-4 py-3 text-gray-700">{finition}</td>
@@ -155,6 +156,43 @@ export default function BudgetPage() {
               </table>
             </div>
             <p className="mt-6 text-gray-700 leading-relaxed">Dans le budget d&apos;une maison, le prix de la construction tient une place importante. Mais il faut également mesurer ce qu&apos;elle pourra vous coûter dans le futur. C&apos;est l&apos;ensemble de ces éléments qui doit être pris en compte et il est donc nécessaire de penser au coût d&apos;une habitation neuve dans sa globalité. Nos partenaires constructeurs de maison individuelle dans le Nord sont à même de vous accompagner de l&apos;étude de votre projet à la réalisation finale de votre logement.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-3xl font-bold text-navy mb-4">Les frais annexes à ne pas oublier dans votre budget</h2>
+          <p className="text-gray-700 leading-relaxed mb-8">Le prix du terrain et le coût de construction ne constituent pas la totalité de votre budget. De nombreux frais annexes s&apos;ajoutent et peuvent représenter 25 000 à 45 000 € supplémentaires. Les anticiper dès le départ vous évitera de mauvaises surprises lors de la négociation de votre prêt immobilier.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm rounded-xl overflow-hidden">
+              <thead>
+                <tr className="bg-navy text-white">
+                  <th className="text-left px-4 py-3 rounded-tl-lg">Poste de dépense</th>
+                  <th className="text-right px-4 py-3 rounded-tr-lg">Fourchette estimée</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Frais de notaire (acte de vente terrain)", "7 à 8 % du prix du terrain"],
+                  ["Taxe d'aménagement (commune + département)", "3 000 – 8 000 €"],
+                  ["Raccordements eau, électricité, assainissement", "3 000 – 8 000 €"],
+                  ["Assurance dommages-ouvrage (obligatoire)", "3 à 5 % du coût de construction"],
+                  ["Étude de sol G2 (obligatoire depuis 2020)", "1 500 – 3 000 €"],
+                  ["Garantie bancaire (caution ou hypothèque)", "1 à 2 % du montant emprunté"],
+                  ["Branchement gaz / fibre / télécom", "500 – 2 000 €"],
+                  ["Aménagements extérieurs (clôture, terrasse, allée)", "5 000 – 15 000 €"],
+                ].map(([poste, montant], i) => (
+                  <tr key={poste} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                    <td className="px-4 py-3 text-gray-700">{poste}</td>
+                    <td className="px-4 py-3 text-right text-navy font-semibold">{montant}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-6 p-5 bg-gold/10 border border-gold/30 rounded-xl">
+            <p className="text-gray-700 text-sm leading-relaxed"><strong className="text-navy">Bon à savoir :</strong> l&apos;assurance dommages-ouvrage est une obligation légale (loi Spinetta 1978). Elle vous couvre pendant 10 ans sur les désordres structurels, sans attendre un jugement de responsabilité. Ne jamais construire sans elle.</p>
           </div>
         </div>
       </section>
