@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison passive à Lille : projet 100 % sur mesure",
   subtitle:
     "Lille attire de plus en plus de projets immobiliers grâce à ses transports en commun exemplaires et ses nombreux espaces verts — un contexte idéal pour votre maison passive.",
+  openingIntro:
+    "Avec une très bonne disposition des transports en commun ainsi qu'une forte présence d'espaces verts, Lille est une ville qui intéresse de plus en plus dans le domaine de l'immobilier. Nous verrons ici essentiellement comment trouver un constructeur de maison passive dans le Nord, plus particulièrement à Lille, et pourquoi privilégier ce choix parmi les autres possibilités.",
   intro:
     "Lille bénéficie d'une très bonne disposition des transports en commun et d'une forte présence d'espaces verts, ce qui attire un nombre croissant de projets immobiliers de qualité. La ville est desservie par le métro, les bus et le TER, avec des connexions rapides vers Paris, Bruxelles et Londres. Ce dynamisme en fait l'un des marchés les plus actifs du Nord pour la construction neuve.",
   whyBuild:

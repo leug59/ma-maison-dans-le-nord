@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison cubique à Lille",
   subtitle:
     "Architecture contemporaine à toit plat et volumes géométriques — dans la métropole lilloise et les communes périphériques comme Lesquin, Marcq-en-Barœul et Roubaix.",
+  openingIntro:
+    "C'est décidé : vous voulez un logement à l'architecture moderne ! Les constructeurs de maison cubique dans le Nord avec qui nous travaillons ont la solution pour vous. Toit plat, cubes imbriqués, menuiseries design et matériaux dernier cri, laissez-vous tenter par un bâtiment aux lignes actuelles : la maison cubique.",
   intro:
     "La métropole lilloise offre de belles opportunités pour la construction de maisons cubiques. Si le centre historique de Vieux Lille est peu propice à ce style architectural, les communes périphériques comme Lesquin, Marcq-en-Barœul et Roubaix accueillent de plus en plus cette architecture contemporaine aux volumes géométriques et aux toits plats. Le terrain relativement plat de la région favorise ce type de construction.",
   whyBuild:

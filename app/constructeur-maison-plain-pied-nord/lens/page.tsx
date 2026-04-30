@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison plain-pied à Lens",
   subtitle:
     "Lens, ville du Louvre-Lens et de la qualité de vie dans le Pas-de-Calais, accueille votre maison plain-pied : accessible, économique et adaptée au climat nordiste.",
+  openingIntro:
+    "Devenir propriétaire à Lens est un bon projet, mais construire sa propre maison en est un encore meilleur. En effet, il s'agit d'une excellente option pour personnaliser son bien immobilier à son image avec un constructeur de maison plain-pied dans le Nord.",
   intro:
     "Lens est l'une des villes les plus attractives du Nord-Pas-de-Calais, connue pour la qualité de sa vie de quartier et ses espaces verts. La ville dispose d'une gare et d'un réseau de bus pour se déplacer facilement dans la région. Son attraction culturelle phare, le Louvre-Lens, en fait une destination de renommée internationale. Un projet de piscine olympique est également en cours dans l'agglomération.",
   whyBuild:

@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison à ossature bois à Douai : projet 100 % sur mesure",
   subtitle:
     "Douai, ville dynamique à 20 min de Lille en TER et 1h20 de Paris en TGV, réunit toutes les conditions pour accueillir votre maison à ossature bois.",
+  openingIntro:
+    "Une MOB est la garantie d'un logement à la fois écologique, économique et durable dans le temps. Pour une belle réalisation de ce type d'habitation, faites appel à un constructeur de maison à ossature bois dans le Nord.",
   intro:
     "Douai est une ville dynamique du Nord, excellemment connectée : 20 minutes de Lille par TER et 1 heure 20 de Paris en TGV. Ses quartiers — Frais-Marais, Faubourg de Béthune, Résidence Gayant — offrent des cadres de vie variés. La ville est reconnue comme un endroit où il fait bon vivre dans les Hauts-de-France, avec des équipements culturels, sportifs et de loisirs de qualité.",
   whyBuild:

@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison cubique à Valenciennes : projets sur mesure",
   subtitle:
     "Sous-préfecture du Nord reconnue comme le 5e centre-ville le plus dynamique de France, Valenciennes offre un cadre idéal pour votre maison cubique contemporaine.",
+  openingIntro:
+    "Votre choix n'est pas encore arrêté sur le style de maison que vous souhaitez faire construire à Valenciennes ? Pourquoi ne pas faire confiance à un constructeur de maison cubique dans le Nord ? Ce type de maison pourrait bien vous correspondre…",
   intro:
     "Valenciennes, sous-préfecture du Nord, est une ville en plein essor. Son centre-ville a été reconnu comme le 5e plus dynamique de France. La ville investit dans de nouvelles pistes cyclables et l'embellissement de ses boulevards. Son aquatic center Nungesser (6 000 m², 3 bassins, toboggan de 20 m, espaces bien-être et restauration, inauguré en février 2020) en fait une ville agréable à vivre pour toute la famille.",
   whyBuild:

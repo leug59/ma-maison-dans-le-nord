@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison plain-pied à Douai",
   subtitle:
     "Dans un cadre de vie idyllique entre nature et culture, Douai accueille votre projet de maison plain-pied — facile à vivre et économique à chauffer.",
+  openingIntro:
+    "La construction de sa propre maison est un projet de vie pour de nombreux individus partout dans le monde, notamment à Douai qui est une ville avec beaucoup d'atouts dans le département du Nord.",
   intro:
     "Douai offre un cadre de vie où les résidents profitent d'espaces extérieurs de qualité. La ville et son agglomération proposent de nombreux parcs et espaces naturels, ainsi qu'une vie culturelle riche. La réserve naturelle de Wagnonville et les parcs urbains permettent de passer du temps en plein air tout au long de l'année.",
   whyBuild:

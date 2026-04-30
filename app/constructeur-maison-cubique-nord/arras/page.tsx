@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison cubique à Arras",
   subtitle:
     "Ville mythique du Pas-de-Calais à 45 km de Lille, Arras allie patrimoine UNESCO et cadre de vie idéal pour votre maison cubique sur mesure.",
+  openingIntro:
+    "Avoir une maison aux lignes modernes à Arras ou ses environs, vous en rêvez ? Faites confiance à un constructeur de maison cubique dans le Nord. Les structures aux formes géométriques et aux combinaisons variées n'ont pas de secret pour ces professionnels de la construction !",
   intro:
     "Arras, capitale du Pas-de-Calais, est une ville mythique des Hauts-de-France, à moins de 20 km de Lens, 45 km de Lille et 100 km de Calais. Son beffroi et la citadelle Vauban sont classés au patrimoine mondial de l'UNESCO. La ville propose également la Cité Nature (15 000 m² de jardins et expositions environnementales) et le Musée des Beaux-Arts installé dans l'ancienne abbaye Saint-Vaast sur 3 hectares. Un cadre de vie exceptionnel pour y faire construire votre maison.",
   whyBuild:

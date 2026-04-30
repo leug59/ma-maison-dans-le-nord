@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison cubique à Douai : projet 100 % sur mesure",
   subtitle:
     "Dans l'agglomération Douai-Lens (67 communes), trouvez le constructeur qui transforme votre projet de maison cubique en réalité.",
+  openingIntro:
+    "Votre projet de maison à Douai peut prendre forme, grâce à un constructeur de maison cubique dans le Nord. Mais pour cela, il faut faire appel au bon professionnel, celui qui saura vous conseiller au mieux et qui réalisera la demeure que vous avez imaginée. Voici comment nous pouvons vous aider.",
   intro:
     "Douai fait partie de l'agglomération Douai-Lens, qui regroupe 67 communes dont Hénin-Beaumont, Liévin, Avion et Carvin. La ville est riche en culture : le Musée de la Chartreuse, la proximité du Musée du Louvre-Lens, et de nombreux espaces verts comme le Jardin des plantes, le Parc Bertin et la réserve naturelle régionale de Wagnonville. Ce cadre de vie alliant culture et nature attire de plus en plus de familles souhaitant construire dans la région.",
   whyBuild:

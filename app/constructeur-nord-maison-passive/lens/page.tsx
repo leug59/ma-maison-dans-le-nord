@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison passive à Lens : projet 100 % personnalisé",
   subtitle:
     "Lens, ville du Louvre-Lens et de la qualité de vie dans le Pas-de-Calais, est l'endroit idéal pour votre maison passive à consommation d'énergie quasi nulle.",
+  openingIntro:
+    "Lens fait partie des plus belles villes de la région du Nord-Pas-de-Calais où vivre s'avère être très agréable. De ce fait, si vous avez pour projet de construire une maison passive dans le Nord, nous vous recommandons de choisir Lens. Et pour trouver le meilleur prestataire pour votre projet de construction, vous pouvez solliciter l'aide de notre équipe, qui vous permettra de trouver des experts qualifiés et régulés.",
   intro:
     "Lens est l'une des villes les plus attractives du Nord-Pas-de-Calais. Ses quartiers paisibles avec jardins offrent un cadre de vie agréable avec accès à la nature. La ville dispose d'une gare et d'un réseau de bus pour faciliter les déplacements. Son musée le Louvre-Lens est une attraction culturelle de renommée mondiale, et un projet de piscine olympique est en cours dans l'agglomération.",
   whyBuild:

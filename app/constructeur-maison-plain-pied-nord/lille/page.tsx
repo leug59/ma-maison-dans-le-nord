@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison plain-pied à Lille : votre projet 100 % personnalisé",
   subtitle:
     "La maison plain-pied, idéale pour le climat du Nord : facile à construire, à aménager, à entretenir et à chauffer — tout en offrant une accessibilité optimale.",
+  openingIntro:
+    "Dans la vie, tout le monde peut avoir des objectifs et des rêves tout aussi différents les uns que les autres. L'un des plus communs est celui de construire sa propre maison.",
   intro:
     "Lille et sa métropole constituent l'une des premières destinations de construction neuve dans le Nord. Les hivers froids de la région rendent le choix du type de construction particulièrement important. La maison plain-pied s'y adapte parfaitement : son architecture de plain-pied facilite l'isolation thermique et la distribution homogène de la chaleur sur un seul niveau.",
   whyBuild:

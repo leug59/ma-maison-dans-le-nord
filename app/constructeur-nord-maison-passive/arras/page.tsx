@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison passive à Arras : trouver le meilleur !",
   subtitle:
     "Arras, ville du patrimoine mondial UNESCO, ses parcs, ses forêts et ses jardins botaniques — un cadre inspirant pour construire la maison passive de demain.",
+  openingIntro:
+    "La maison passive est la maison du futur. Celle-ci est construite de manière à exploiter un maximum d'énergie naturelle et renouvelable telle que l'énergie solaire. Grâce à des panneaux solaires, votre maison peut être alimentée exclusivement par l'énergie solaire, ce qui va réduire de manière considérable vos dépenses. Cependant, pour profiter des avantages d'une maison passive à Arras, vous devez trouver un excellent constructeur de maison passive dans le Nord.",
   intro:
     "Arras est stratégiquement positionnée dans le Nord-Pas-de-Calais, à proximité de Lens et avec un accès facile au littoral. La ville possède un patrimoine culturel exceptionnel, dont la citadelle Vauban et le beffroi inscrits au patrimoine mondial de l'UNESCO. Elle dispose également de parcs, forêts et jardins botaniques, rendant son cadre de vie particulièrement agréable pour les amoureux de la nature souhaitant construire durablement.",
   whyBuild:

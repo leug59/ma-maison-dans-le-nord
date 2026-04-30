@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison passive à Valenciennes : notre sélection",
   subtitle:
     "Valenciennes, l'une des villes les plus dynamiques de France, combine vie urbaine animée et espaces verts — idéal pour votre maison passive sur mesure.",
+  openingIntro:
+    "Valenciennes est une très jolie ville des Hauts-de-France qui abrite de nombreux endroits culturels et de loisir. Vivre dans la région s'avère être très agréable, notamment pour les amoureux de la nature. Valenciennes est également connue pour ses commerces, qui lui permettent d'être l'une des villes les plus dynamiques de France. Faire construire votre maison passive dans la région serait donc une bonne idée, à condition de trouver le bon constructeur de maison passive dans le Nord.",
   intro:
     "Valenciennes abrite de nombreux endroits culturels et de loisirs qui en font l'une des villes les plus dynamiques de France. La cité du Hainaut offre une vie très animée, avec ses commerces, ses restaurants et ses équipements sportifs de premier plan — dont l'aquatic center Nungesser (6 000 m², 3 bassins, toboggan de 20 m). La ville conjugue également des quartiers calmes et verdoyants pour ceux qui recherchent la tranquillité.",
   whyBuild:

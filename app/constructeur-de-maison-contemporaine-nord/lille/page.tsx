@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison contemporaine à Lille : satisfaction garantie",
   subtitle:
     "Lille, capitale européenne de la culture 2004, avec la Gare Saint-Sauveur, la Vieille Ville, le Parc Matisse et la Braderie — un écrin pour votre maison contemporaine.",
+  openingIntro:
+    "Vous rêvez d'une maison contemporaine aux lignes épurées à Lille ? L'équipe de Ma Maison dans le Nord sélectionne pour vous les constructeurs les plus fiables de la métropole, pour un projet serein de A à Z.",
   intro:
     "Lille est la plus grande métropole du Nord et a été capitale européenne de la culture en 2004. La ville offre une richesse culturelle remarquable : la Gare Saint-Sauveur réhabilitée accueille les programmations de plus de 50 associations locales. Les habitants profitent aussi des rues de la Vieille Lille, du Parc Matisse, du Jardin des Géants, des terrasses de la Grand'Place et de la célèbre Braderie de septembre, l'un des plus grands marchés aux puces du monde.",
   whyBuild:

@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison à ossature bois à Lille : 100 % sur mesure",
   subtitle:
     "La Métropole Européenne de Lille, plus d'un million d'habitants, encourage activement les constructions écologiques — un contexte idéal pour votre maison à ossature bois.",
+  openingIntro:
+    "Vous voulez un logement qui allie à la fois écologie, économie et rapidité de construction ? Alors, optez pour le plus naturel des matériaux : le bois. Mais avant de penser à votre futur nid douillet, il faut trouver le constructeur de maison à ossature bois dans le Nord idéal.",
   intro:
     "Lille est la ville principale de la Métropole Européenne de Lille (MEL), qui compte plus d'un million d'habitants. La ville est célèbre pour son Vieux Lille historique et sa position de carrefour européen entre Paris, Bruxelles et Londres. La municipalité mène une politique active en faveur de l'écologie : pistes cyclables et trottinettes, transports en commun étendus, jardins communautaires, et subventions pour l'installation d'énergies renouvelables.",
   whyBuild:

@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison passive à Béthune : comment trouver le meilleur ?",
   subtitle:
     "Béthune, ancienne ville bourgeoise devenue dynamique et moderne, offre un cadre de vie agréable pour votre maison passive écologique et économique.",
+  openingIntro:
+    "Béthune est l'une des villes les plus importantes du Nord Pas de Calais qui, autrefois, était connue pour être une ville bourgeoise. Aujourd'hui, celle-ci abrite de nombreux commerces, des jardins ainsi que des lieux culturels. Si vous recherchez une ville où il est bon de vivre, nous vous recommandons d'y trouver un constructeur de maison passive dans le Nord.",
   intro:
     "Béthune est l'une des villes les plus importantes du Nord-Pas-de-Calais. Ancienne ville à caractère bourgeois, elle accueille aujourd'hui de nombreux commerces, jardins et lieux culturels qui créent un environnement de vie agréable. La ville offre un équilibre entre animation commerciale et quartiers résidentiels calmes, idéal pour une construction neuve.",
   whyBuild:

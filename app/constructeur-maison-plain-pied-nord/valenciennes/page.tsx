@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison plain-pied à Valenciennes",
   subtitle:
     "Valenciennes, ville au cadre de vie idyllique et à l'activité économique soutenue, est l'endroit idéal pour votre maison plain-pied accessible et conviviale.",
+  openingIntro:
+    "Valenciennes est l'une des agglomérations dans le Nord les mieux réputées en raison de son cadre de vie idyllique et de son dynamisme sans comparable. Il s'agit donc d'une ville à privilégier pour trouver un constructeur de maison plain-pied dans le Nord.",
   intro:
     "Valenciennes est reconnue comme l'une des villes les plus agréables à vivre du Nord. Son cadre de vie alliant dynamisme commercial et espaces verts en fait une destination de choix pour les projets immobiliers. La ville et ses environs offrent de nombreuses opportunités de construction sur des terrains adaptés à l'architecture de plain-pied.",
   whyBuild:

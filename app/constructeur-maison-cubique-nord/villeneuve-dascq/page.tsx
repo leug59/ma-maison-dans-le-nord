@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison cubique à Villeneuve d'Ascq",
   subtitle:
     "Technopole verte entre Lille et Roubaix, Villeneuve-d'Ascq réunit toutes les conditions pour accueillir votre maison cubique contemporaine.",
+  openingIntro:
+    "Vous êtes séduit par les lignes épurées et le toit plat de la maison cubique ? Villeneuve-d'Ascq, ville jeune et dynamique de la MEL, est l'endroit idéal pour concrétiser ce type de projet architectural avec un constructeur de confiance.",
   intro:
     "Villeneuve-d'Ascq est stratégiquement positionnée entre Lille et Roubaix. La commune dispose d'infrastructures pour les jeunes enfants comme pour les étudiants, et bénéficie d'un réseau de transports exceptionnel (métro, bus, TER, autoroutes). Désignée « technopole verte » pour la concentration d'entreprises et de laboratoires de recherche (INSERM, INRIA, CNRS, Haute-Borne), elle combine vie professionnelle dynamique et cadre de vie agréable.",
   whyBuild:

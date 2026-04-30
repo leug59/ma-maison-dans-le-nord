@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison à ossature bois à Arras",
   subtitle:
     "Arras, capitale du Pas-de-Calais avec ses équipements scolaires, culturels et sportifs, offre un cadre idéal pour votre maison écologique à ossature bois.",
+  openingIntro:
+    "Vous avez toujours rêvé d'habiter dans un logement construit en bois à Arras ? L'équipe de Ma Maison dans le Nord vous propose une sélection soignée des meilleurs constructeurs de maisons à ossature bois dans le Nord.",
   intro:
     "Arras, capitale du Pas-de-Calais, propose de nombreuses infrastructures appréciées des familles : équipements de garde d'enfants, écoles et lycées de qualité, enseignement supérieur, pistes cyclables, transports en commun et stationnements. La ville offre aussi une riche programmation sportive, culturelle et touristique. C'est dans ce cadre de vie complet que vous pouvez envisager la construction de votre maison à ossature bois.",
   whyBuild:

@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison à ossature bois à Valenciennes",
   subtitle:
     "Valenciennes et son agglomération (Marly, Onnaing, Anzin, Aulnoy-Lez-Valenciennes) offrent de nombreuses opportunités pour votre maison à ossature bois.",
+  openingIntro:
+    "C'est décidé : vous allez vous lancer dans la construction, mais pas tout seul ! Vous allez faire appel à un constructeur de maison à ossature bois dans le Nord, et vous avez bien raison ! L'équipe de Ma Maison dans le Nord vous explique pourquoi.",
   intro:
     "Valenciennes, sous-préfecture du Nord, propose de nombreux équipements culturels et de loisirs : la médiathèque Simone Veil, le centre culturel l'Odyssée, le Musée des Beaux-Arts. La ville dispose aussi de services spécialisés pour les seniors et les personnes en situation de handicap. L'agglomération de Valenciennes s'étend aux communes voisines de Marly, Onnaing, Anzin et Aulnoy-Lez-Valenciennes, offrant de nombreuses possibilités de construction.",
   whyBuild:

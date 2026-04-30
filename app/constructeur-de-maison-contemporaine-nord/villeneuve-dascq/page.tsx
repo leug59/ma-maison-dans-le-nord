@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison contemporaine à Villeneuve d'Ascq",
   subtitle:
     "Entre Lille et Roubaix, Villeneuve-d'Ascq avec le LaM, le parc du Héron et le stade Pierre-Mauroy offre un cadre de vie unique pour votre maison contemporaine.",
+  openingIntro:
+    "Villeneuve-d'Ascq, ville jeune et dynamique de la Métropole Européenne de Lille, est un cadre de choix pour faire construire une maison contemporaine. Faites confiance aux partenaires de Ma Maison dans le Nord pour concrétiser votre projet.",
   intro:
     "Villeneuve-d'Ascq est une commune résidentielle bien positionnée entre Lille et Roubaix. Elle offre une palette d'équipements remarquable : le LaM (sculpture park avec des œuvres de Klee et Modigliani), le parc du Héron avec une ferme en activité, 5 sentiers de randonnée, 6 lacs, le stade Pierre-Mauroy avec son toit rétractable, 4 marchés (Annappes, la Résidence, Flers-Bourg et Ascq) et un centre commercial.",
   whyBuild:

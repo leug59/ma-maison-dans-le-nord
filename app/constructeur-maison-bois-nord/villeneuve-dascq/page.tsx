@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison à ossature bois à Villeneuve d'Ascq",
   subtitle:
     "Deuxième commune de la Métropole Européenne de Lille avec 63 000 habitants, Villeneuve-d'Ascq est le lieu idéal pour votre maison à ossature bois.",
+  openingIntro:
+    "Vous souhaitez faire construire une maison à ossature bois à Villeneuve-d'Ascq ? L'équipe de Ma Maison dans le Nord vous met en relation avec les meilleurs constructeurs spécialisés de la Métropole Européenne de Lille.",
   intro:
     "Villeneuve-d'Ascq s'est formée de l'union de trois villages — Flers, Annappes et Ascq — et est aujourd'hui la deuxième commune de la Métropole Européenne de Lille avec 63 000 habitants. La ville offre des quartiers variés : Brigode, Croix de Wallers, la Haute-Borne, Triolo, la Cité Scientifique et Hempempont. Chaque quartier possède ses propres caractéristiques et attraits pour les familles.",
   whyBuild:

@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison plain-pied à Béthune",
   subtitle:
     "Béthune, ville du Pas-de-Calais alliant commerces de proximité, transports et qualité de vie, est un excellent choix pour votre maison plain-pied.",
+  openingIntro:
+    "Dans le département du Nord, il y a beaucoup de villes tout aussi prometteuses les unes que les autres. C'est le cas de Béthune, avec plusieurs heureux propriétaires, ainsi que toutes les commodités nécessaires à proximité. L'endroit idéal pour trouver un constructeur de maison plain-pied dans le Nord.",
   intro:
     "Béthune est une ville prometteuse du département du Pas-de-Calais, appréciée pour ses nombreuses commodités : commerces de proximité, transports en commun, équipements sportifs et culturels. Elle offre à la fois un cadre de vie calme dans ses quartiers résidentiels et une animation commerciale dynamique en centre-ville — idéal pour une vie de famille épanouie.",
   whyBuild:

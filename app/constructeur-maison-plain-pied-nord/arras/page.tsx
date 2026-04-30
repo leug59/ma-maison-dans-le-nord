@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison plain-pied à Arras",
   subtitle:
     "Arras, capitale du Pas-de-Calais bien connectée à Lille, Douai et Lens, est une ville à forte tradition de propriété : 34 % des habitants sont propriétaires.",
+  openingIntro:
+    "Avoir une maison à son image dans une ville telle qu'Arras est un objectif pour de nombreuses personnes. Cependant, avant de se lancer dans ce projet, il est important de prendre en considération de nombreux critères comme celui de l'architecture de la maison et du bon constructeur de maison plain-pied dans le Nord.",
   intro:
     "Arras est idéalement située pour les projets de construction neuve. Environ 34 % des habitants de la ville sont propriétaires, signe d'une forte culture de l'accession immobilière. La ville bénéficie d'excellentes liaisons de transport vers Lille, Douai et Lens, ainsi que d'un bassin d'emploi dynamique. Son patrimoine historique exceptionnel (beffroi et citadelle Vauban classés UNESCO) et la qualité de ses équipements culturels en font une ville où il fait bon construire et vivre.",
   whyBuild:

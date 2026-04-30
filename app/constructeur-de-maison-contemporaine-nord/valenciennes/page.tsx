@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison contemporaine à Valenciennes",
   subtitle:
     "Valenciennes, avec ses 17 écoles primaires, 6 collèges, 7 lycées et ses grandes écoles (Polytechnique HdF, Rubika), est un choix idéal pour votre maison contemporaine familiale.",
+  openingIntro:
+    "Valenciennes et son agglomération offrent un cadre de vie dynamique et agréable pour votre projet de maison contemporaine. Ma Maison dans le Nord vous aide à trouver le constructeur le mieux adapté à votre vision et à votre budget dans le secteur valenciennois.",
   intro:
     "Valenciennes propose une infrastructure éducative exceptionnelle : 17 écoles primaires (dont Saint-Exupéry, Jean Mineur et Françoise Badar), 6 collèges et 7 lycées. L'enseignement supérieur est également bien représenté avec Polytechnique Hauts-de-France et Rubika. La ville allie dynamisme économique et qualité de vie, ce qui en fait une destination attractive pour les familles souhaitant s'installer durablement.",
   whyBuild:

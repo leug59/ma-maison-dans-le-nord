@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison contemporaine à Douai : projet sur mesure",
   subtitle:
     "Douai, à 1h35 de Charles de Gaulle, 3h15 d'Amsterdam et 3h25 de Londres, offre un accès européen exceptionnel pour votre maison contemporaine.",
+  openingIntro:
+    "La clé d'un projet immobilier réussi est de trouver le bon constructeur de maison contemporaine dans le Nord. C'est ce que l'équipe de Ma Maison dans le Nord s'efforce de faire pour vous.",
   intro:
     "Douai est remarquablement bien connectée à l'Europe : 1 heure 35 minutes de l'aéroport Charles de Gaulle, 3 heures 15 minutes d'Amsterdam par la route et 3 heures 25 minutes de Londres via l'autoroute et le ferry. La ville propose de nombreux équipements de loisirs : le Musée de la Chartreuse, la piscine du Glacis, le parc de la Tour des Dames et le parc de loisirs Jacques Vernier pour les familles.",
   whyBuild:

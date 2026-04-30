@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison passive à Douai : comment trouver le meilleur ?",
   subtitle:
     "Douai, entre ses musées, ses parcs et sa réserve naturelle riche en faune et flore, offre un cadre de vie idéal pour votre maison passive écologique.",
+  openingIntro:
+    "La maison passive est un type d'habitation écologique qui possède une consommation énergétique très basse. Aujourd'hui, beaucoup de Français optent pour la construction d'une maison passive qui leur permet d'un côté de réduire leur consommation énergétique et d'un autre de protéger l'environnement. Dans cette revue, nous allons vous donner nos meilleurs conseils pour trouver un bon constructeur de maisons passives dans le Nord, plus précisément dans la région de Douai.",
   intro:
     "Douai est une ville avec une forte demande en logements dans le Nord-Pas-de-Calais. Elle propose de nombreuses attractions culturelles (musées, jardins, parcs) et la réserve naturelle de Douai, décrite comme très riche en faune et en flore. Faire construire une maison passive à Douai, c'est choisir de vivre dans un endroit où vous pourrez profiter de la nature tout en minimisant votre empreinte écologique.",
   whyBuild:

@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison contemporaine à Arras",
   subtitle:
     "Arras et ses quartiers variés — Baudimont, Diderot, Ronville, Université, Jaurès — offrent de nombreuses opportunités pour votre maison contemporaine sur mesure.",
+  openingIntro:
+    "Vous souhaitez faire construire dans la Région des Hauts-de-France, mais vous vous posez beaucoup de questions ? Arras, est-elle une ville qui va vous plaire ? Dois-je me tourner vers un constructeur de maison contemporaine dans le Nord ? Ma Maison dans le Nord tente de répondre à vos questions.",
   intro:
     "Arras propose des quartiers aux caractéristiques bien distinctes : les quartiers ouest (Baudimont, Diderot, Saint-Pol, Bonnettes), les quartiers est (Jaurès, Ronville, Université, Rietz) et les secteurs nord autour de l'avenue Michonneau. Chaque lieu a ses atouts propres — proximité du centre, espaces verts, équipements scolaires — et les résidents trouveront partout des infrastructures adaptées à la vie de famille.",
   whyBuild:

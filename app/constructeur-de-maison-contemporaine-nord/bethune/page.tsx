@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison contemporaine à Béthune : projet sur mesure !",
   subtitle:
     "Béthune et ses parcs (Mont Sans Pareil, Perroy, Saint-Louis, Mont-Liébaut, Beuvry), ses écoles et ses quartiers variés — le bon endroit pour votre maison contemporaine.",
+  openingIntro:
+    "Votre souhait est d'habiter dans une maison avec des lignes épurées, de larges ouvertures et des matériaux derniers cris ? Un logement moderne et à votre image grâce à un constructeur de maison contemporaine dans le Nord de confiance, c'est ce que vous propose l'équipe de Ma Maison dans le Nord.",
   intro:
     "Béthune, dans les Hauts-de-France, propose de nombreux espaces verts et parcs de loisirs : Mont Sans Pareil, Perroy, Saint-Louis, Mont-Liébaut et Beuvry. La ville dispose d'une infrastructure scolaire complète (écoles, collèges, lycées) répartie dans des quartiers variés : Beau Marais-Gare d'Eau-Espace Lafayette, Cheminots Huit Ter, Mont Liebaut, Rue de Lille Faubourg d'Arras. Un cadre de vie agréable pour les familles.",
   whyBuild:
