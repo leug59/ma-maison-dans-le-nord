@@ -86,6 +86,35 @@ export default function ErreursConstruireNordPage() {
         </div>
       </section>
 
+      <section className="py-8 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="relative h-56 rounded-xl overflow-hidden shadow-md">
+              <Image
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&auto=format&fit=crop&q=80"
+                alt="Architecte étudiant des plans de construction"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-navy/20" />
+              <span className="absolute bottom-3 left-3 px-3 py-1 bg-navy/80 text-white text-xs font-medium rounded-full">Plans & documents</span>
+            </div>
+            <div className="relative h-56 rounded-xl overflow-hidden shadow-md">
+              <Image
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
+                alt="Chantier de construction de maison dans le Nord"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-navy/20" />
+              <span className="absolute bottom-3 left-3 px-3 py-1 bg-navy/80 text-white text-xs font-medium rounded-full">Chantier en cours</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-4 px-4">
         <div className="max-w-4xl mx-auto space-y-16">
           {erreurs.map((erreur) => (

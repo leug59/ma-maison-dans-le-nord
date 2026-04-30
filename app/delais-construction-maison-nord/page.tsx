@@ -103,6 +103,35 @@ export default function DelaisConstructionNordPage() {
         </div>
       </section>
 
+      <section className="py-8 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="relative h-56 rounded-xl overflow-hidden shadow-md">
+              <Image
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&auto=format&fit=crop&q=80"
+                alt="Ouvriers sur un chantier de construction de maison"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-navy/20" />
+              <span className="absolute bottom-3 left-3 px-3 py-1 bg-navy/80 text-white text-xs font-medium rounded-full">Gros œuvre</span>
+            </div>
+            <div className="relative h-56 rounded-xl overflow-hidden shadow-md">
+              <Image
+                src="https://images.unsplash.com/photo-1600596542815-0c92b69d8e73?w=800&auto=format&fit=crop&q=80"
+                alt="Maison individuelle moderne dans le Nord"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-navy/20" />
+              <span className="absolute bottom-3 left-3 px-3 py-1 bg-navy/80 text-white text-xs font-medium rounded-full">Maison terminée</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-display text-3xl font-bold text-navy mb-10">Les 7 étapes de votre construction, de A à Z</h2>

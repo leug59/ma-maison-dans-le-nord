@@ -79,6 +79,39 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-5 gap-10 lg:gap-16">
             {/* Infos */}
             <aside className="lg:col-span-2 space-y-8 order-2 lg:order-1" aria-labelledby="infos-title">
+              {/* Illustration */}
+              <div className="flex justify-center lg:justify-start" aria-hidden="true">
+                <svg viewBox="0 0 180 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-44 h-auto">
+                  {/* House body */}
+                  <rect x="20" y="72" width="100" height="72" rx="2" fill="#0d1b2e" fillOpacity="0.06"/>
+                  {/* Roof */}
+                  <polygon points="10,72 70,22 130,72" fill="#0d1b2e" fillOpacity="0.10"/>
+                  {/* Roof ridge line */}
+                  <polyline points="10,72 70,22 130,72" stroke="#0d1b2e" strokeWidth="2" strokeOpacity="0.3" strokeLinejoin="round" fill="none"/>
+                  {/* Chimney */}
+                  <rect x="90" y="34" width="14" height="22" rx="1" fill="#0d1b2e" fillOpacity="0.12"/>
+                  {/* Door */}
+                  <rect x="52" y="105" width="36" height="39" rx="3" fill="#c8922a" fillOpacity="0.75"/>
+                  <circle cx="84" cy="126" r="2.5" fill="white" fillOpacity="0.8"/>
+                  {/* Left window */}
+                  <rect x="26" y="83" width="26" height="20" rx="2" fill="#c8922a" fillOpacity="0.35"/>
+                  <line x1="39" y1="83" x2="39" y2="103" stroke="white" strokeWidth="1.5" strokeOpacity="0.6"/>
+                  <line x1="26" y1="93" x2="52" y2="93" stroke="white" strokeWidth="1.5" strokeOpacity="0.6"/>
+                  {/* Right window */}
+                  <rect x="88" y="83" width="26" height="20" rx="2" fill="#c8922a" fillOpacity="0.35"/>
+                  <line x1="101" y1="83" x2="101" y2="103" stroke="white" strokeWidth="1.5" strokeOpacity="0.6"/>
+                  <line x1="88" y1="93" x2="114" y2="93" stroke="white" strokeWidth="1.5" strokeOpacity="0.6"/>
+                  {/* Speech bubble */}
+                  <rect x="108" y="8" width="62" height="46" rx="10" fill="#c8922a"/>
+                  <polygon points="118,54 132,54 120,66" fill="#c8922a"/>
+                  {/* Envelope in bubble */}
+                  <rect x="118" y="18" width="42" height="26" rx="3" fill="white" fillOpacity="0.2"/>
+                  <polyline points="118,18 139,32 160,18" stroke="white" strokeWidth="2" strokeLinejoin="round" fill="none"/>
+                  <line x1="118" y1="44" x2="132" y2="44" stroke="white" strokeWidth="1.5" strokeOpacity="0.6" strokeLinecap="round"/>
+                  <line x1="118" y1="38" x2="145" y2="38" stroke="white" strokeWidth="1.5" strokeOpacity="0.6" strokeLinecap="round"/>
+                </svg>
+              </div>
+
               <h2
                 id="infos-title"
                 className="font-display text-xl font-bold text-navy"
