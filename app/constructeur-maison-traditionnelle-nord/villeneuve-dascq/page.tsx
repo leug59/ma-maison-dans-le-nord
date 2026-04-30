@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison traditionnelle à Villeneuve d'Ascq",
   subtitle:
     "Née à la fin des années 1960 de la fusion d'Ascq, Flers-lez-Lille et Annappes, Villeneuve-d'Ascq est aujourd'hui une agglomération complète avec toutes les commodités.",
+  openingIntro:
+    "Vous souhaitez faire construire et vous avez de nombreuses interrogations. C'est tout à fait normal ! Villeneuve d'Ascq vous attire, mais vous n'êtes pas encore sûr de votre choix ? Vous aimeriez habiter dans une maison typique de la région des Hauts-de-France, mais où trouver un bon constructeur de maisons traditionnelles dans le Nord ? Notre équipe est là pour vous épauler.",
   intro:
     "Villeneuve-d'Ascq a émergé à la fin des années 1960 comme réponse à la croissance démographique de Lille. Formée de la fusion de trois communes — Ascq, Flers-lez-Lille et Annappes — elle constitue aujourd'hui une agglomération complète dotée de nombreuses écoles, équipements sportifs, espaces de loisirs, et d'un patrimoine architectural et naturel remarquable.",
   whyBuild:

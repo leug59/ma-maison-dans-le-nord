@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison individuelle à Douai : projet sur mesure",
   subtitle:
     "Douai, ville cyclable et bien connectée, offre d'excellentes conditions de vie pour votre maison individuelle sur mesure.",
+  openingIntro:
+    "La ville de Douai va-t-elle correspondre à votre mode de vie ? Comment trouver un constructeur de maison individuelle dans le Nord ? Vous vous posez de nombreuses questions sur votre futur projet immobilier, et c'est tout à fait normal. L'équipe de Ma Maison dans le Nord est à vos côtés pour vous accompagner.",
   intro:
     "Douai mise fortement sur la mobilité douce : son programme « Douai à vélo » relie les communes voisines comme Lambres-Lez-Douai à Raches par des pistes cyclables. Le réseau de bus Évéole complète les déplacements, et la navette Binbin dessert 16 arrêts du centre-ville. La ville dispose de 2 parkings centraux (Gayant et Barlet), avec la gratuité du stationnement le samedi de midi à 16h pour favoriser le commerce local.",
   whyBuild:

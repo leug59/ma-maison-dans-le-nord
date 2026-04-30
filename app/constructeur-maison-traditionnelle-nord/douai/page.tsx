@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison traditionnelle à Douai",
   subtitle:
     "Douai, ville du beffroi UNESCO et de l'Abbaye des Près aux villas Art Déco, incarne le meilleur de l'architecture traditionnelle des Hauts-de-France.",
+  openingIntro:
+    "En partenariat avec des constructeurs de maisons traditionnelles dans le Nord soigneusement sélectionnés, l'équipe de Ma Maison dans le Nord va vous aider à réaliser votre projet immobilier. Découvrez comment.",
   intro:
     "Douai est une ville chargée d'histoire, avec son beffroi inscrit au patrimoine mondial de l'UNESCO et le quartier de l'Abbaye des Près avec ses remarquables villas Art Déco. La ville est au cœur d'un bassin de vie comprenant les communes de Raches, Anhiers, Waziers, Roost-Warendin, Flers-en-Escrebieux, Cuincy, Sin-le-Noble et Lambres-lez-Douai. L'architecture traditionnelle douaisienne est caractérisée par ses façades en brique rouge, ses toits noirs pentus et ses hautes menuiseries — un style intemporel qui séduit toujours.",
   whyBuild:

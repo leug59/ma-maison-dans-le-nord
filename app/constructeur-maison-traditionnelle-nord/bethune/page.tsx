@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison traditionnelle à Béthune",
   subtitle:
     "Béthune, Smart City depuis 2016, tourne résolument vers l'avenir tout en conservant l'âme et le charme d'une ville nordiste à taille humaine.",
+  openingIntro:
+    "Vous avez choisi d'habiter dans le Nord et vous souhaitez faire bâtir une maison traditionnelle de la région des Hauts-de-France. Votre principal souci est que vous ne savez pas quel constructeur de maison traditionnelle dans le Nord choisir. Pas de panique, notre équipe de spécialistes est là pour vous accompagner dans votre projet.",
   intro:
     "Béthune est une ville tournée vers l'avenir. Depuis 2016, la municipalité a lancé une initiative Smart City ambitieuse, articulée autour de l'écologie, de l'économie collaborative, du développement numérique et du bien-être des habitants. Située dans le Pas-de-Calais, Béthune se distingue comme une agglomération dynamique, innovante et attentive aux enjeux contemporains.",
   whyBuild:

@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison traditionnelle à Lille",
   subtitle:
     "Le Vieux Lille et son architecture flamande — briques rouges, toits pentus, hautes menuiseries, chiens assis — incarnent l'identité de la construction traditionnelle nordiste.",
+  openingIntro:
+    "Vous êtes né dans le Nord-Pas-de-Calais et vous avez toujours souhaité vivre dans une maison typique de la région ? Les constructeurs de maisons traditionnelles dans le Nord avec qui nous travaillons peuvent exaucer votre vœu : voici comment.",
   intro:
     "Lille est la référence emblématique de l'architecture traditionnelle nordiste. Le quartier de la Vieille Lille illustre parfaitement le style flamand caractéristique de la région : briques rouges, toits pentus, menuiseries toutes en hauteur et souvent des chiens assis. Ce style architectural se retrouve dans les villes et communes alentour comme Haubourdin, Lesquin, Lambersart et Marcq-en-Barœul.",
   whyBuild:

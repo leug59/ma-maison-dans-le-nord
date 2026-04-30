@@ -18,6 +18,8 @@ const data: CityMaisonData = {
   h1: "Constructeur de maison traditionnelle à Valenciennes",
   subtitle:
     "Valenciennes, à 30 min de Lille, 1h50 de Paris en TGV et 1h de Bruxelles, offre une mobilité européenne exceptionnelle pour votre maison traditionnelle.",
+  openingIntro:
+    "Allier une construction neuve et l'architecture traditionnelle de la région Hauts-de-France, c'est ce que vous souhaitez pour votre future maison. Faites confiance à nos partenaires constructeurs de maisons traditionnelles dans le Nord pour réaliser votre projet.",
   intro:
     "Valenciennes bénéficie d'une position stratégique enviable : Lille est à 30 minutes en voiture ou en TER, Paris est accessible en TGV direct en 1 heure 50 minutes ou par autoroute en 2 heures, et Bruxelles est à 1 heure par la route ou l'avion. Cette mobilité exceptionnelle vers plusieurs métropoles françaises et internationales fait de Valenciennes un choix idéal pour les professionnels souhaitant s'installer dans le Nord.",
   whyBuild:
