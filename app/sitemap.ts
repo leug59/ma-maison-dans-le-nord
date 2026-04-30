@@ -13,13 +13,13 @@ const typeUrls: Record<string, string> = {
 };
 
 const cityPages: { type: string; cities: string[] }[] = [
-  { type: "cubique", cities: ["lille", "arras", "douai", "valenciennes", "villeneuve-dascq"] },
+  { type: "cubique", cities: ["lille", "arras", "douai", "valenciennes", "villeneuve-dascq", "lens"] },
   { type: "plain-pied", cities: ["lille", "arras", "douai", "valenciennes", "lens", "bethune"] },
-  { type: "ossature-bois", cities: ["lille", "arras", "douai", "villeneuve-dascq", "valenciennes"] },
+  { type: "ossature-bois", cities: ["lille", "arras", "douai", "villeneuve-dascq", "valenciennes", "lens"] },
   { type: "passive", cities: ["lille", "douai", "arras", "valenciennes", "lens", "bethune"] },
-  { type: "individuelle", cities: ["lille", "douai", "arras", "valenciennes", "villeneuve-dascq"] },
-  { type: "contemporaine", cities: ["lille", "bethune", "arras", "douai", "valenciennes", "villeneuve-dascq"] },
-  { type: "traditionnelle", cities: ["lille", "bethune", "arras", "douai", "valenciennes", "villeneuve-dascq"] },
+  { type: "individuelle", cities: ["lille", "douai", "arras", "valenciennes", "villeneuve-dascq", "lens"] },
+  { type: "contemporaine", cities: ["lille", "bethune", "arras", "douai", "valenciennes", "villeneuve-dascq", "lens"] },
+  { type: "traditionnelle", cities: ["lille", "bethune", "arras", "douai", "valenciennes", "villeneuve-dascq", "lens"] },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
