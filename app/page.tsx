@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Constructeur de maison individuelle dans le Nord | Ma Maison dans le Nord",
   description:
-    "Ma Maison dans le Nord sélectionne les meilleurs constructeurs de maisons individuelles des Hauts-de-France. Projets 100% sur mesure à Lille, dans le Nord et le Pas-de-Calais. Devis gratuit.",
+    "Trouvez votre constructeur de maison dans le Nord parmi nos partenaires sélectionnés. Service gratuit, projet sur mesure, accompagnement complet dans les Hauts-de-France. Devis gratuit.",
   alternates: { canonical: "/" },
   openGraph: buildOpenGraph("/", "website"),
 };
@@ -36,6 +36,61 @@ const jsonLd = {
       "@type": "WebSite",
       name: "Ma Maison dans le Nord",
       url: "https://www.ma-maison-dans-le-nord.fr",
+    },
+    {
+      "@type": "Person",
+      name: "Julien Legrand",
+      jobTitle: "Fondateur",
+      worksFor: {
+        "@type": "Organization",
+        name: "Ma Maison dans le Nord",
+      },
+      url: "https://www.ma-maison-dans-le-nord.fr",
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Comment fonctionne la mise en relation ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Vous remplissez le formulaire, nous vous recontactons sous 48h avec des constructeurs sélectionnés.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Le service est-il gratuit ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Oui, entièrement gratuit pour le particulier.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Quels types de maisons proposez-vous ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Traditionnelle, contemporaine, cubique, ossature bois, plain-pied, passive et individuelle.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Dans quelles villes intervenez-vous ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Toute la région Hauts-de-France : Lille, Arras, Douai, Valenciennes, Lens, Béthune et leurs environs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Quel budget prévoir pour construire dans le Nord ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Entre 1 500 et 2 500€/m² selon le type de maison, hors terrain.",
+          },
+        },
+      ],
     },
   ],
 };
