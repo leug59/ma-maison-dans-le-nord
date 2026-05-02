@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const avantages = [
   "Mise en relation 100% gratuite et sans engagement",
-  "Réponse de notre équipe sous 24 à 48h",
+  "Réponse de notre équipe dans les meilleurs délais",
   "Constructeurs sélectionnés et vérifiés",
   "Projets 100% sur mesure et personnalisés",
   "Couverture de tout le Nord et le Pas-de-Calais",

@@ -101,7 +101,7 @@ export default function DevisForm() {
           Demande envoyée !
         </h3>
         <p className="text-gray-600">
-          Notre équipe vous contactera dans les 24 à 48h pour vous proposer
+          Notre équipe vous contactera dans les meilleurs délais pour vous proposer
           une mise en relation avec nos constructeurs partenaires.
         </p>
       </div>

@@ -34,7 +34,7 @@ const infos = [
   },
   {
     label: "Délai de réponse",
-    value: "24 à 48h ouvrées",
+    value: "Dès que possible",
     icon: (
       <svg
         className="w-5 h-5"
@@ -68,7 +68,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-white/70 text-lg max-w-xl mx-auto">
             Une question sur votre projet de construction ? Notre équipe vous
-            répond dans les 24 à 48h.
+            répond dans les meilleurs délais.
           </p>
         </div>
       </section>

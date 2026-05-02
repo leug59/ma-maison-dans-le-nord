@@ -5,10 +5,9 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title:
-    "Constructeur de maison individuelle dans le Nord | Ma Maison dans le Nord",
+  title: "Constructeur maison Nord — Devis gratuit & sur mesure",
   description:
-    "Trouvez votre constructeur de maison dans le Nord parmi nos partenaires sélectionnés. Service gratuit, projet sur mesure, accompagnement complet dans les Hauts-de-France. Devis gratuit.",
+    "Comparez les meilleurs constructeurs de maison dans le Nord. Partenaires vérifiés, accompagnement gratuit de A à Z, projet 100% sur mesure dans les Hauts-de-France.",
   alternates: { canonical: "/" },
   openGraph: buildOpenGraph("/", "website"),
 };
@@ -55,7 +54,7 @@ const jsonLd = {
           name: "Comment fonctionne la mise en relation ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Vous remplissez le formulaire, nous vous recontactons sous 48h avec des constructeurs sélectionnés.",
+            text: "Vous remplissez le formulaire, nous analysons votre projet et vous mettons en relation avec des constructeurs sélectionnés dans votre région.",
           },
         },
         {
@@ -96,8 +95,8 @@ const jsonLd = {
 };
 
 const stats = [
-  { value: "15+", label: "Constructeurs partenaires" },
-  { value: "300+", label: "Familles accompagnées" },
+  { value: "✓", label: "Partenaires sélectionnés" },
+  { value: "✓", label: "Accompagnement complet" },
   { value: "7", label: "Types de maisons" },
   { value: "100%", label: "Sur mesure" },
 ];
@@ -247,6 +246,9 @@ export default function HomePage() {
                 <span className="text-gold"> de vos rêves</span>
                 <br className="hidden sm:inline" />
                 {" "}dans le Nord
+                <span className="block text-2xl sm:text-3xl lg:text-4xl font-normal text-white/70 mt-3">
+                  — sur mesure, avec un constructeur de confiance
+                </span>
               </h1>
               <p className="text-white/70 text-lg sm:text-xl mb-10 leading-relaxed">
                 Ma Maison dans le Nord sélectionne et met en relation les

@@ -67,7 +67,7 @@ export async function POST(req: Request) {
         <p style="color:#374151">Bonjour ${nom},</p>
         <p style="color:#374151">
           Merci de nous avoir contactés. Nous avons bien reçu votre message concernant
-          <strong>${objet}</strong> et nous vous répondrons dans les meilleurs délais (24 à 48h ouvrées).
+          <strong>${objet}</strong> et nous vous répondrons dans les meilleurs délais.
         </p>
         <div style="margin:24px 0;background:#f9fafb;border-left:4px solid #c8922a;padding:16px;border-radius:4px">
           <strong style="color:#0d1b2e">Rappel de votre message :</strong>

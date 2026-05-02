@@ -74,7 +74,7 @@ export async function POST(req: Request) {
         <p style="color:#374151">Bonjour ${prenom},</p>
         <p style="color:#374151">
           Merci pour votre demande de devis. Notre équipe l'étudie et vous mettra en relation
-          avec le constructeur idéal dans les <strong>24 à 48h</strong>.
+          avec le constructeur idéal dans les meilleurs délais.
         </p>
         <div style="margin:24px 0;background:#f9fafb;border:1px solid #e5e7eb;padding:20px;border-radius:8px">
           <h3 style="color:#0d1b2e;margin:0 0 12px">Récapitulatif de votre projet</h3>
