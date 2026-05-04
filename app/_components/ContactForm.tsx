@@ -33,8 +33,13 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+      if (!res.ok) {
+        const errBody = await res.json().catch(() => ({}));
+        console.error("[contact] API error", res.status, errBody);
+      }
       setStatus(res.ok ? "success" : "error");
-    } catch {
+    } catch (err) {
+      console.error("[contact] Fetch error", err);
       setStatus("error");
     } finally {
       setLoading(false);

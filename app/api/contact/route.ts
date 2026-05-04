@@ -24,14 +24,19 @@ export async function POST(req: Request) {
   }
 
   // Turnstile verification
+  const hasTurnstileSecret = !!process.env.TURNSTILE_SECRET_KEY;
+  const hasTurnstileToken = !!turnstileToken;
+  console.log(`[contact] Turnstile check — secret configured: ${hasTurnstileSecret}, token received: ${hasTurnstileToken}`);
   const turnstileOk = await verifyTurnstileToken(turnstileToken);
   if (!turnstileOk) {
-    console.warn("[contact] Turnstile verification failed");
-    return NextResponse.json({ error: "Vérification de sécurité échouée." }, { status: 400 });
+    console.warn("[contact] Turnstile verification failed — token was:", hasTurnstileToken ? "present" : "missing");
+    return NextResponse.json({ error: "Vérification de sécurité échouée.", detail: "turnstile" }, { status: 400 });
   }
 
   if (!nom || !email || !objet || !message) {
-    return NextResponse.json({ error: "Champs obligatoires manquants." }, { status: 400 });
+    const missing = { nom: !nom, email: !email, objet: !objet, message: !message };
+    console.warn("[contact] Missing required fields:", missing);
+    return NextResponse.json({ error: "Champs obligatoires manquants.", detail: "fields", missing }, { status: 400 });
   }
 
   // Spam keyword / link filter

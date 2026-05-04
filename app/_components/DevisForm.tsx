@@ -58,8 +58,13 @@ export default function DevisForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+      if (!res.ok) {
+        const errBody = await res.json().catch(() => ({}));
+        console.error("[devis] API error", res.status, errBody);
+      }
       setStatus(res.ok ? "success" : "error");
-    } catch {
+    } catch (err) {
+      console.error("[devis] Fetch error", err);
       setStatus("error");
     } finally {
       setLoading(false);
