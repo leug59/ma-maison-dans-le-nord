@@ -1,13 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import TurnstileWidget from "@/app/_components/TurnstileWidget";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [loading, setLoading] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+    if (siteKey && !turnstileToken) return; // Captcha not yet completed
+
     setLoading(true);
 
     const form = e.currentTarget;
@@ -17,6 +23,8 @@ export default function ContactForm() {
       telephone: (form.elements.namedItem("telephone") as HTMLInputElement).value,
       objet: (form.elements.namedItem("objet") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
+      turnstileToken,
     };
 
     try {
@@ -77,6 +85,14 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+      {/* Honeypot — must stay empty */}
+      <div
+        style={{ position: "absolute", left: "-9999px", top: "auto", width: "1px", height: "1px", overflow: "hidden" }}
+        aria-hidden="true"
+      >
+        <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+      </div>
+
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="contact-nom" className="block text-sm font-medium text-navy mb-1.5">
@@ -160,6 +176,11 @@ export default function ContactForm() {
           .
         </label>
       </div>
+
+      <TurnstileWidget
+        onToken={setTurnstileToken}
+        onExpire={() => setTurnstileToken("")}
+      />
 
       <button
         type="submit"

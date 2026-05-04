@@ -1,5 +1,7 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { isSpam } from "@/app/_lib/spam-filter";
+import { verifyTurnstileToken } from "@/app/_lib/turnstile";
 
 const FROM = "contact@ma-maison-dans-le-nord.fr";
 const TO_ADMIN = "legrandj@gmail.com";
@@ -12,14 +14,33 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Configuration serveur manquante." }, { status: 500 });
   }
 
-  const resend = new Resend(apiKey);
   const body = await req.json();
-  const { prenom, nom, email, telephone, typeMaison, budget, surface, ville, terrain, message } = body;
+  const { prenom, nom, email, telephone, typeMaison, budget, surface, ville, terrain, message, website, turnstileToken } = body;
+
+  // Honeypot — bots fill this field, legit users don't
+  if (website) {
+    console.log("[devis] Honeypot triggered");
+    return NextResponse.json({ success: true }); // Silent reject
+  }
+
+  // Turnstile verification
+  const turnstileOk = await verifyTurnstileToken(turnstileToken);
+  if (!turnstileOk) {
+    console.warn("[devis] Turnstile verification failed");
+    return NextResponse.json({ error: "Vérification de sécurité échouée." }, { status: 400 });
+  }
 
   if (!prenom || !nom || !email || !typeMaison || !budget || !ville) {
     return NextResponse.json({ error: "Champs obligatoires manquants." }, { status: 400 });
   }
 
+  // Spam keyword / link filter (check message field if present)
+  if (message && isSpam(message)) {
+    console.log("[devis] Spam filter triggered");
+    return NextResponse.json({ success: true }); // Silent reject
+  }
+
+  const resend = new Resend(apiKey);
   const fullName = `${prenom} ${nom}`;
 
   // Email de notification à l'admin

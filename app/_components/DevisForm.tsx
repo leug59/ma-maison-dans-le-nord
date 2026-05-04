@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import TurnstileWidget from "@/app/_components/TurnstileWidget";
 
 const maisonTypes = [
   "Maison traditionnelle",
@@ -25,9 +26,14 @@ const budgets = [
 export default function DevisForm() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [loading, setLoading] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+    if (siteKey && !turnstileToken) return; // Captcha not yet completed
+
     setLoading(true);
 
     const form = e.currentTarget;
@@ -42,6 +48,8 @@ export default function DevisForm() {
       ville: (form.elements.namedItem("ville") as HTMLInputElement).value,
       terrain: (form.querySelector('input[name="terrain"]:checked') as HTMLInputElement | null)?.value ?? "",
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
+      turnstileToken,
     };
 
     try {
@@ -110,6 +118,14 @@ export default function DevisForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+      {/* Honeypot — must stay empty */}
+      <div
+        style={{ position: "absolute", left: "-9999px", top: "auto", width: "1px", height: "1px", overflow: "hidden" }}
+        aria-hidden="true"
+      >
+        <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+      </div>
+
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
           <label
@@ -319,6 +335,11 @@ export default function DevisForm() {
           .
         </label>
       </div>
+
+      <TurnstileWidget
+        onToken={setTurnstileToken}
+        onExpire={() => setTurnstileToken("")}
+      />
 
       <button
         type="submit"
