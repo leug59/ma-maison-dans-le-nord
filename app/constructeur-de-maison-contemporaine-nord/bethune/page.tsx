@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison contemporaine à Béthune — Projet sur mesure",
+  title: "Constructeur maison contemporaine à Béthune",
   description:
     "Maison contemporaine à Béthune (Pas-de-Calais) : parcs, écoles, quartiers variés. Architecture design, matériaux modernes. Devis gratuit.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/bethune" },

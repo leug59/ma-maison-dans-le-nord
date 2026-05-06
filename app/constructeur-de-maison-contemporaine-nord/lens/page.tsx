@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison contemporaine à Lens — Design et sur mesure",
+  title: "Constructeur maison contemporaine à Lens",
   description:
     "Maison contemporaine à Lens, ville du Louvre-Lens et du bassin minier UNESCO. Grandes baies vitrées, matériaux modernes, RE2020. Devis gratuit.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/lens" },

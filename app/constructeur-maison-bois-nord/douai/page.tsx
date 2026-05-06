@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison ossature bois à Douai — 100 % sur mesure",
+  title: "Constructeur maison ossature bois à Douai",
   description:
     "Maison à ossature bois à Douai, ville dynamique à 20 min de Lille. Construction écologique avec garantie de prix et de délais. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/douai" },

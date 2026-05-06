@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison individuelle à Lens — Projet 100% sur mesure",
+  title: "Constructeur maison individuelle à Lens",
   description:
     "Construisez votre maison individuelle à Lens et dans l'agglomération Lens-Liévin (250 000 hab.). Prix du foncier accessibles, renouveau urbain du bassin minier. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-individuelle-nord/lens" },

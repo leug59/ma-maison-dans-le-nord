@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison traditionnelle à Valenciennes — Sur mesure",
+  title: "Constructeur maison traditionnelle à Valenciennes",
   description:
     "Maison traditionnelle à Valenciennes : Lille 30 min, Paris TGV 1h50, Bruxelles 1h. Prix et délais garantis contractuellement. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-traditionnelle-nord/valenciennes" },

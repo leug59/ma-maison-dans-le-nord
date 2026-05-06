@@ -6,7 +6,7 @@ import { buildServiceSchema } from "@/app/_lib/schema";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur de maison traditionnelle dans le Nord : ce qu'il faut savoir",
+  title: "Constructeur maison traditionnelle dans le Nord",
   description:
     "Façade en briques rouges, toit pentu, menuiseries foncées : découvrez les caractéristiques d'une maison traditionnelle du Nord et comment trouver le bon constructeur.",
   alternates: { canonical: "/constructeur-maison-traditionnelle-nord" },

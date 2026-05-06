@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison ossature bois à Arras — Projet écologique",
+  title: "Constructeur maison ossature bois à Arras",
   description:
     "Maison à ossature bois à Arras, capitale du Pas-de-Calais. Construction écologique, rapide et performante. Partenaires expérimentés. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/arras" },

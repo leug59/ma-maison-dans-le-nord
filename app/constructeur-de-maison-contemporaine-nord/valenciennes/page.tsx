@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison contemporaine à Valenciennes — Sur mesure",
+  title: "Constructeur maison contemporaine à Valenciennes",
   description:
     "Maison contemporaine à Valenciennes : 17 écoles primaires, grandes écoles (Polytechnique HdF, Rubika). Lignes épurées, matériaux modernes. Devis gratuit.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/valenciennes" },

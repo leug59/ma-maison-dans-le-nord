@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison traditionnelle à Lille — Architecture flamande",
+  title: "Constructeur maison traditionnelle à Lille",
   description:
     "Maison traditionnelle à Lille : briques rouges, toits pentus, chiens assis — l'architecture flamande emblématique du Nord. Constructeurs qualifiés. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-traditionnelle-nord/lille" },

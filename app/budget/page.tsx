@@ -5,7 +5,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Quel budget pour une construction de maison dans le Nord ?",
+  title: "Budget construction maison Nord — Prix au m² 2026",
   description: "Prix moyen terrain et construction dans le Nord, variables qui font fluctuer le budget : terrain, architecture, superficie, matériaux, chauffage, finitions.",
   alternates: { canonical: "/budget" },
   openGraph: buildOpenGraph("/budget", "website"),

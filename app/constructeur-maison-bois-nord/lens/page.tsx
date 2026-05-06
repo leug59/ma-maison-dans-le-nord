@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison ossature bois à Lens — Écologique et performant",
+  title: "Constructeur maison ossature bois à Lens",
   description:
     "Maison à ossature bois à Lens, au cœur du bassin minier UNESCO. Construction légère, adaptée aux sols de la région, écologique et économe en énergie. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/lens" },

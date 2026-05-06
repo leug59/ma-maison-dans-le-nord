@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison cubique à Douai — Projet 100 % sur mesure",
+  title: "Constructeur maison cubique à Douai",
   description:
     "Faites construire votre maison cubique à Douai et dans l'agglomération Douai-Lens. Architecture contemporaine, projet 100 % personnalisé. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-cubique-nord/douai" },

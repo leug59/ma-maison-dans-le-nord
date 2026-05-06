@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison cubique à Villeneuve-d'Ascq — Sur mesure",
+  title: "Constructeur maison cubique à Villeneuve-d'Ascq",
   description:
     "Construisez votre maison cubique à Villeneuve-d'Ascq, technopole verte entre Lille et Roubaix. Architecture contemporaine personnalisée. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-cubique-nord/villeneuve-dascq" },

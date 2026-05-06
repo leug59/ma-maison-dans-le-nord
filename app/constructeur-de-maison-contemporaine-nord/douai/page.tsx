@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison contemporaine à Douai — Projet sur mesure",
+  title: "Constructeur maison contemporaine à Douai",
   description:
     "Maison contemporaine à Douai : 1h35 de CDG, Louvre-Lens, Musée de la Chartreuse. Partenaires sélectionnés, CCMI, garantie décennale. Devis gratuit.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/douai" },

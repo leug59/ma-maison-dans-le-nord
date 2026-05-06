@@ -5,7 +5,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Construction dans le Nord : quelles sont les étapes de votre projet ?",
+  title: "Étapes construction maison Nord — Guide complet",
   description: "De la définition du projet à la réception du chantier : découvrez en détail toutes les étapes de votre construction de maison dans le Nord.",
   alternates: { canonical: "/etapes-construction" },
   openGraph: buildOpenGraph("/etapes-construction", "website"),

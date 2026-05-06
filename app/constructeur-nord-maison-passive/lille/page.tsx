@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison passive à Lille — Projet 100 % sur mesure",
+  title: "Constructeur maison passive à Lille",
   description:
     "Construisez votre maison passive à Lille : moins de 15 kWh/m²/an, triple vitrage, VMC double flux. Économies massives sur vos factures. Devis gratuit.",
   alternates: { canonical: "/constructeur-nord-maison-passive/lille" },

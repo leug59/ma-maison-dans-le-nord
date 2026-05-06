@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison individuelle à Valenciennes — Sur mesure",
+  title: "Constructeur maison individuelle à Valenciennes",
   description:
     "Maison individuelle à Valenciennes : 17 écoles, 6 collèges, 7 lycées, grandes écoles. Constructeurs sélectionnés. Tous styles. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-individuelle-nord/valenciennes" },

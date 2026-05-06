@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison plain-pied à Douai — Projet personnalisé",
+  title: "Constructeur maison plain-pied à Douai",
   description:
     "Construisez votre maison plain-pied à Douai dans un cadre de vie idyllique. Facile à chauffer et entretenir dans le climat du Nord. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-plain-pied-nord/douai" },

@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison plain-pied à Valenciennes — Sur mesure",
+  title: "Constructeur maison plain-pied à Valenciennes",
   description:
     "Construisez votre maison plain-pied à Valenciennes, ville dynamique du Nord à cadre de vie idyllique. Accessible et économique. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-plain-pied-nord/valenciennes" },

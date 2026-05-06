@@ -5,7 +5,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "5 erreurs à éviter quand on fait construire dans le Nord",
+  title: "5 erreurs à éviter pour construire dans le Nord",
   description:
     "Mauvais constructeur, budget sous-estimé, terrain mal étudié… Ces 5 erreurs coûtent cher aux futurs propriétaires nordistes. Comment les éviter avant de signer.",
   alternates: { canonical: "/erreurs-construction-maison-nord" },

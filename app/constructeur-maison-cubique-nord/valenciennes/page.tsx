@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison cubique à Valenciennes — Projets sur mesure",
+  title: "Constructeur maison cubique à Valenciennes",
   description:
     "Construisez votre maison cubique à Valenciennes, 5e centre-ville le plus dynamique de France. Architecture contemporaine personnalisée. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-cubique-nord/valenciennes" },

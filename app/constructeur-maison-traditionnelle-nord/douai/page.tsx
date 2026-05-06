@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison traditionnelle à Douai — Briques et caractère",
+  title: "Constructeur maison traditionnelle à Douai",
   description:
     "Maison traditionnelle à Douai : beffroi UNESCO, villas Art Déco, briques rouges et toits noirs. Constructeurs locaux, budget respecté. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-traditionnelle-nord/douai" },

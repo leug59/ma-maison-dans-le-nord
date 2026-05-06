@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison passive à Béthune — Trouver le meilleur",
+  title: "Constructeur maison passive à Béthune",
   description:
     "Maison passive à Béthune, importante ville du Nord-Pas-de-Calais. Constructeurs qualifiés, devis personnalisé, aide terrain. Économies d'énergie maximales.",
   alternates: { canonical: "/constructeur-nord-maison-passive/bethune" },

@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison ossature bois à Lille — 100 % sur mesure",
+  title: "Constructeur maison ossature bois à Lille",
   description:
     "Construisez votre maison à ossature bois à Lille et dans la MEL. Écologique, rapide, performante. La métropole encourage les constructions durables. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/lille" },

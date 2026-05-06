@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison traditionnelle à Arras — Sur mesure",
+  title: "Constructeur maison traditionnelle à Arras",
   description:
     "Maison traditionnelle à Arras : pistes cyclables, Ville amie des enfants, Charte de l'Arbre Urbain. Constructeurs fiables, budget maîtrisé. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-traditionnelle-nord/arras" },

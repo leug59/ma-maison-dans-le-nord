@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison cubique à Lens — Architecture contemporaine",
+  title: "Constructeur maison cubique à Lens",
   description:
     "Maison cubique à Lens, ville du Louvre-Lens et du bassin minier UNESCO. Toit plat, volumes géométriques, design ultra-moderne dans le Pas-de-Calais. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-cubique-nord/lens" },

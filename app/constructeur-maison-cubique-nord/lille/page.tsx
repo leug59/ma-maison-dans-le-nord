@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison cubique à Lille — Projet sur mesure",
+  title: "Constructeur maison cubique à Lille",
   description:
     "Trouvez votre constructeur de maison cubique à Lille et dans la métropole. Architecture moderne à toit plat, cubes emboîtés, grandes baies vitrées. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-cubique-nord/lille" },

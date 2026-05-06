@@ -5,7 +5,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Délais de construction : combien de temps pour votre maison dans le Nord ?",
+  title: "Délais construction maison Nord — Timing complet",
   description:
     "De la recherche du terrain à la remise des clés, comptez 12 à 18 mois pour faire construire dans le Nord. Le détail de chaque étape et les facteurs qui allongent les délais.",
   alternates: { canonical: "/delais-construction-maison-nord" },

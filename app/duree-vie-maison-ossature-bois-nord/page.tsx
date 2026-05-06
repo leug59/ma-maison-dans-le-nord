@@ -5,7 +5,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Quelle est la durée de vie d'une maison en ossature bois dans le Nord ?",
+  title: "Durée de vie maison ossature bois Nord",
   description: "Idées reçues, facteurs de longévité, entretien : découvrez pourquoi une maison en ossature bois dans le Nord peut durer une centaine d'années.",
   alternates: { canonical: "/duree-vie-maison-ossature-bois-nord" },
   openGraph: buildOpenGraph("/duree-vie-maison-ossature-bois-nord", "article"),

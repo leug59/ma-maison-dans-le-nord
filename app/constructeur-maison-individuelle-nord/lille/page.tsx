@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison individuelle à Lille — 100 % sur mesure",
+  title: "Constructeur maison individuelle à Lille",
   description:
     "Construisez votre maison individuelle à Lille : Bois-Blancs, Faubourg de Béthune, Lille-Sud, Fives… Savoir-faire local et accompagnement personnalisé. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-individuelle-nord/lille" },

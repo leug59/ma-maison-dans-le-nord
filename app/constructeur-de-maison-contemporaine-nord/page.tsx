@@ -6,7 +6,7 @@ import { buildServiceSchema } from "@/app/_lib/schema";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur de maison contemporaine dans le Nord : faire le bon choix",
+  title: "Constructeur maison contemporaine Nord",
   description:
     "Vous rêvez d'une maison moderne dans le Nord ? Trouvez votre constructeur de maison contemporaine dans le Nord-Pas-de-Calais grâce à notre réseau de partenaires locaux.",
   alternates: { canonical: "/constructeur-de-maison-contemporaine-nord" },

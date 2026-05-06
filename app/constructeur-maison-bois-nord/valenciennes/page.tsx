@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison ossature bois à Valenciennes — Écologique",
+  title: "Constructeur maison ossature bois à Valenciennes",
   description:
     "Maison à ossature bois à Valenciennes et dans l'arrondissement (Marly, Anzin, Onnaing…). Construction durable et personnalisée. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-bois-nord/valenciennes" },

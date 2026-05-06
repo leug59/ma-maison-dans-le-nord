@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison individuelle à Arras — Sur mesure",
+  title: "Constructeur maison individuelle à Arras",
   description:
     "Maison individuelle à Arras (Pas-de-Calais) : piscines, golf, arts, culture. Constructeurs sélectionnés pour leur sérieux. Devis gratuit et sans engagement.",
   alternates: { canonical: "/constructeur-maison-individuelle-nord/arras" },

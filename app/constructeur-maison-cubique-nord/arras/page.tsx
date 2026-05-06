@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison cubique à Arras — Projet sur mesure",
+  title: "Constructeur maison cubique à Arras",
   description:
     "Construisez votre maison cubique à Arras, ville du Pas-de-Calais à 45 km de Lille. Architecture géométrique 100 % personnalisée. Mise en relation gratuite.",
   alternates: { canonical: "/constructeur-maison-cubique-nord/arras" },

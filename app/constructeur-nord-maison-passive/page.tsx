@@ -6,7 +6,7 @@ import { buildServiceSchema } from "@/app/_lib/schema";
 
 
 export const metadata: Metadata = {
-  title: "Maison passive dans le Nord : tout ce qu'il faut savoir",
+  title: "Maison passive dans le Nord — Tout savoir",
   description: "Fonctionnement, origines, critères de labellisation : tout sur la maison passive dans le Nord. Économies d'énergie, confort et écologie.",
   alternates: { canonical: "/constructeur-nord-maison-passive" },
   openGraph: buildOpenGraph("/constructeur-nord-maison-passive", "website"),

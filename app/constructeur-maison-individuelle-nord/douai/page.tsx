@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison individuelle à Douai — Projet sur mesure",
+  title: "Constructeur maison individuelle à Douai",
   description:
     "Maison individuelle à Douai : pistes cyclables, Évéole bus, parking gratuit le samedi. Constructeurs sélectionnés sur le volet. Devis gratuit.",
   alternates: { canonical: "/constructeur-maison-individuelle-nord/douai" },

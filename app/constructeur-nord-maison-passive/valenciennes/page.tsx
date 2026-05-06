@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison passive à Valenciennes — Notre sélection",
+  title: "Constructeur maison passive à Valenciennes",
   description:
     "Maison passive à Valenciennes, l'une des villes les plus dynamiques de France. Constructeurs sélectionnés, aide terrain, devis rapide. Économies garanties.",
   alternates: { canonical: "/constructeur-nord-maison-passive/valenciennes" },

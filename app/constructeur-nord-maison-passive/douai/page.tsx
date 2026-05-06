@@ -4,7 +4,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 
 
 export const metadata: Metadata = {
-  title: "Constructeur maison passive à Douai — Trouver le meilleur",
+  title: "Constructeur maison passive à Douai",
   description:
     "Maison passive à Douai, entre nature et culture. Constructeurs qualifiés et certifiés. Réduisez vos factures d'énergie au minimum. Devis gratuit.",
   alternates: { canonical: "/constructeur-nord-maison-passive/douai" },
