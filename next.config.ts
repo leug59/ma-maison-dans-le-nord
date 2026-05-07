@@ -13,6 +13,13 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // ── Trailing slash → sans slash (couvre toutes les pages) ────────
+      {
+        source: "/:path+/",
+        destination: "/:path+",
+        permanent: true,
+      },
+
       // ── Pages principales ────────────────────────────────────────────
       {
         source: "/budget-construction-maison-nord",
