@@ -19,11 +19,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ma-maison-dans-le-nord.fr"),
-  title: {
-    template: "%s | Ma Maison dans le Nord",
-    default:
-      "Constructeur de maison individuelle dans le Nord | Ma Maison dans le Nord",
-  },
+  title: "Constructeur de maison individuelle dans le Nord | Ma Maison dans le Nord",
   description:
     "Ma Maison dans le Nord sélectionne les meilleurs constructeurs de maisons individuelles des Hauts-de-France. Projets 100% sur mesure à Lille, dans le Nord et le Pas-de-Calais.",
   keywords: [
