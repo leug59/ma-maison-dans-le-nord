@@ -7,7 +7,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 export const metadata: Metadata = {
   title: "Pourquoi choisir un constructeur maison Nord — Avantages",
   description: "7 bonnes raisons de faire appel à un constructeur de maison individuelle dans le Nord : sur-mesure, accompagnement, délais, prix, terrain et plus.",
-  alternates: { canonical: "/avantages-constructeur-maison-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/avantages-constructeur-maison-nord" },
   openGraph: buildOpenGraph("/avantages-constructeur-maison-nord", "article"),
 };
 

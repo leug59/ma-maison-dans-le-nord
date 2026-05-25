@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison ossature bois à Lens",
   description:
     "Maison à ossature bois à Lens, au cœur du bassin minier UNESCO. Construction légère, adaptée aux sols de la région, écologique et économe en énergie. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-bois-nord/lens" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-bois-nord/lens" },
   openGraph: buildOpenGraph("/constructeur-maison-bois-nord/lens", "website"),
 };
 

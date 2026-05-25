@@ -8,7 +8,7 @@ import { buildServiceSchema } from "@/app/_lib/schema";
 export const metadata: Metadata = {
   title: "Constructeur maison cubique dans le Nord",
   description: "Découvrez les caractéristiques et avantages d'une maison cubique dans le Nord, et comment trouver le bon constructeur pour votre projet.",
-  alternates: { canonical: "/constructeur-maison-cubique-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-cubique-nord" },
   openGraph: buildOpenGraph("/constructeur-maison-cubique-nord", "website"),
 };
 

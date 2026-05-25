@@ -7,7 +7,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 export const metadata: Metadata = {
   title: "À propos — Ma Maison dans le Nord",
   description: "Qui sommes-nous ? Notre équipe, notre mission et les critères de sélection de nos constructeurs partenaires dans le Nord-Pas-de-Calais.",
-  alternates: { canonical: "/a-propos" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/a-propos" },
   openGraph: buildOpenGraph("/a-propos", "website"),
 };
 

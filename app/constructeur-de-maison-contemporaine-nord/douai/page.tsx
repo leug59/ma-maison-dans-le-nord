@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Douai",
   description:
     "Maison contemporaine à Douai : 1h35 de CDG, Louvre-Lens, Musée de la Chartreuse. Partenaires sélectionnés, CCMI, garantie décennale. Devis gratuit.",
-  alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/douai" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-de-maison-contemporaine-nord/douai" },
   openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/douai", "website"),
 };
 

@@ -7,7 +7,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 export const metadata: Metadata = {
   title: "Trouver et choisir son terrain à construire dans le Nord",
   description: "Superficie, situation, configuration, viabilisation, prix, CU, PLU : tous les critères pour trouver et choisir votre terrain constructible dans le Nord.",
-  alternates: { canonical: "/choisir-terrain-a-vendre-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/choisir-terrain-a-vendre-nord" },
   openGraph: buildOpenGraph("/choisir-terrain-a-vendre-nord", "article"),
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Arras",
   description:
     "Construisez votre maison plain-pied à Arras, capitale du Pas-de-Calais. 34 % des habitants sont propriétaires. Projet 100 % personnalisé. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-plain-pied-nord/arras" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-plain-pied-nord/arras" },
   openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/arras", "website"),
 };
 

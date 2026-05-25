@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Types de maisons individuelles dans le Nord",
   description:
     "Découvrez les 7 types de maisons individuelles proposées par nos constructeurs partenaires dans les Hauts-de-France : traditionnelle, contemporaine, cubique, ossature bois, plain-pied, passive, individuelle.",
-  alternates: { canonical: "/types-construction-maison-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/types-construction-maison-nord" },
   openGraph: buildOpenGraph("/types-construction-maison-nord", "website"),
 };
 

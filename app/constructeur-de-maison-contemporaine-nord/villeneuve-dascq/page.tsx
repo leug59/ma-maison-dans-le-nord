@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Villeneuve-d'Ascq",
   description:
     "Maison contemporaine à Villeneuve-d'Ascq : LaM (Klee, Modigliani), parc du Héron, stade Pierre-Mauroy. Matériaux et couleurs sur mesure. Devis gratuit.",
-  alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/villeneuve-dascq" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-de-maison-contemporaine-nord/villeneuve-dascq" },
   openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/villeneuve-dascq", "website"),
 };
 

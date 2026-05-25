@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Valenciennes",
   description:
     "Maison contemporaine à Valenciennes : 17 écoles primaires, grandes écoles (Polytechnique HdF, Rubika). Lignes épurées, matériaux modernes. Devis gratuit.",
-  alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/valenciennes" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-de-maison-contemporaine-nord/valenciennes" },
   openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/valenciennes", "website"),
 };
 

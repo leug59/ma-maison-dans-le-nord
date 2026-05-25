@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison cubique à Douai",
   description:
     "Faites construire votre maison cubique à Douai et dans l'agglomération Douai-Lens. Architecture contemporaine, projet 100 % personnalisé. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-cubique-nord/douai" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-cubique-nord/douai" },
   openGraph: buildOpenGraph("/constructeur-maison-cubique-nord/douai", "website"),
 };
 

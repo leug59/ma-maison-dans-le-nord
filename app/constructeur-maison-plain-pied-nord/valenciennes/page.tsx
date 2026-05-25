@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Valenciennes",
   description:
     "Construisez votre maison plain-pied à Valenciennes, ville dynamique du Nord à cadre de vie idyllique. Accessible et économique. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-plain-pied-nord/valenciennes" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-plain-pied-nord/valenciennes" },
   openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/valenciennes", "website"),
 };
 

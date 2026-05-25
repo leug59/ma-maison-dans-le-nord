@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Lens",
   description:
     "Maison traditionnelle à Lens : briques rouges et architecture nordiste dans la ville du bassin minier UNESCO. Corons, cités ouvrières, construction sur mesure. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-traditionnelle-nord/lens" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-traditionnelle-nord/lens" },
   openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/lens", "website"),
 };
 

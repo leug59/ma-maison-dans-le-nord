@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Béthune",
   description:
     "Maison traditionnelle à Béthune, Smart City depuis 2016 : écologie, digital, bien-être. Constructeurs qualifiés pour un projet personnalisé. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-traditionnelle-nord/bethune" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-traditionnelle-nord/bethune" },
   openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/bethune", "website"),
 };
 

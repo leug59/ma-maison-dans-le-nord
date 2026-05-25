@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Lille",
   description:
     "Construisez votre maison plain-pied à Lille et dans la métropole. Accessible, économique à chauffer et entretenir. Mise en relation gratuite avec nos constructeurs.",
-  alternates: { canonical: "/constructeur-maison-plain-pied-nord/lille" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-plain-pied-nord/lille" },
   openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/lille", "website"),
 };
 

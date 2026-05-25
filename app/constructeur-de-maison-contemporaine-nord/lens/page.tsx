@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Lens",
   description:
     "Maison contemporaine à Lens, ville du Louvre-Lens et du bassin minier UNESCO. Grandes baies vitrées, matériaux modernes, RE2020. Devis gratuit.",
-  alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/lens" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-de-maison-contemporaine-nord/lens" },
   openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/lens", "website"),
 };
 

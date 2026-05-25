@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "5 erreurs à éviter pour construire dans le Nord",
   description:
     "Mauvais constructeur, budget sous-estimé, terrain mal étudié… Ces 5 erreurs coûtent cher aux futurs propriétaires nordistes. Comment les éviter avant de signer.",
-  alternates: { canonical: "/erreurs-construction-maison-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/erreurs-construction-maison-nord" },
   openGraph: buildOpenGraph("/erreurs-construction-maison-nord", "article"),
 };
 

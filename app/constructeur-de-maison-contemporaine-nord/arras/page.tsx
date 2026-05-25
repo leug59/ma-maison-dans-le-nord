@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Arras",
   description:
     "Maison contemporaine à Arras : quartiers Baudimont, Ronville, Université, Jaurès… Architecture design, économies de délais. Devis gratuit.",
-  alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/arras" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-de-maison-contemporaine-nord/arras" },
   openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/arras", "website"),
 };
 

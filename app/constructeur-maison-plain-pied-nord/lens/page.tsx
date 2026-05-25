@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Lens",
   description:
     "Construisez votre maison plain-pied à Lens, ville du Louvre-Lens. Chauffage facile sur un seul niveau, accessibilité optimale. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-plain-pied-nord/lens" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-plain-pied-nord/lens" },
   openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/lens", "website"),
 };
 

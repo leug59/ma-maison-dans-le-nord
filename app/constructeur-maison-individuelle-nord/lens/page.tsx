@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison individuelle à Lens",
   description:
     "Construisez votre maison individuelle à Lens et dans l'agglomération Lens-Liévin (250 000 hab.). Prix du foncier accessibles, renouveau urbain du bassin minier. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-individuelle-nord/lens" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-individuelle-nord/lens" },
   openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord/lens", "website"),
 };
 

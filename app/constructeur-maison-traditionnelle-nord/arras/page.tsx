@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Arras",
   description:
     "Maison traditionnelle à Arras : pistes cyclables, Ville amie des enfants, Charte de l'Arbre Urbain. Constructeurs fiables, budget maîtrisé. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-traditionnelle-nord/arras" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-traditionnelle-nord/arras" },
   openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/arras", "website"),
 };
 

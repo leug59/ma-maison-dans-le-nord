@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison individuelle à Douai",
   description:
     "Maison individuelle à Douai : pistes cyclables, Évéole bus, parking gratuit le samedi. Constructeurs sélectionnés sur le volet. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-individuelle-nord/douai" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-individuelle-nord/douai" },
   openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord/douai", "website"),
 };
 

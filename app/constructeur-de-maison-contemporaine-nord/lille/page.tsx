@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Lille",
   description:
     "Maison contemporaine à Lille, capitale européenne de la culture 2004. Lignes épurées, grandes baies vitrées, matériaux modernes. Devis gratuit.",
-  alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/lille" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-de-maison-contemporaine-nord/lille" },
   openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/lille", "website"),
 };
 

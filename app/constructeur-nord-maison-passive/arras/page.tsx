@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison passive à Arras",
   description:
     "Maison passive à Arras, ville UNESCO du Pas-de-Calais. Constructeurs certifiés, devis gratuit, aide à la recherche de terrain. Économies d'énergie maximales.",
-  alternates: { canonical: "/constructeur-nord-maison-passive/arras" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-nord-maison-passive/arras" },
   openGraph: buildOpenGraph("/constructeur-nord-maison-passive/arras", "website"),
 };
 

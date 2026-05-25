@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Villeneuve-d'Ascq",
   description:
     "Maison traditionnelle à Villeneuve-d'Ascq, née de la fusion d'Ascq, Flers et Annappes. Constructeurs multi-générationnels, architecture régionale. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-traditionnelle-nord/villeneuve-dascq" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-traditionnelle-nord/villeneuve-dascq" },
   openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/villeneuve-dascq", "website"),
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison passive à Béthune",
   description:
     "Maison passive à Béthune, importante ville du Nord-Pas-de-Calais. Constructeurs qualifiés, devis personnalisé, aide terrain. Économies d'énergie maximales.",
-  alternates: { canonical: "/constructeur-nord-maison-passive/bethune" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-nord-maison-passive/bethune" },
   openGraph: buildOpenGraph("/constructeur-nord-maison-passive/bethune", "website"),
 };
 

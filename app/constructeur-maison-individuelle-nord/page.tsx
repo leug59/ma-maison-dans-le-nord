@@ -8,7 +8,7 @@ import { buildServiceSchema } from "@/app/_lib/schema";
 export const metadata: Metadata = {
   title: "Constructeur de maison individuelle dans le Nord",
   description: "Définition, garanties, critères de choix : tout sur la construction de maison individuelle dans le Nord et comment sélectionner le bon constructeur.",
-  alternates: { canonical: "/constructeur-maison-individuelle-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-individuelle-nord" },
   openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord", "website"),
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison passive à Douai",
   description:
     "Maison passive à Douai, entre nature et culture. Constructeurs qualifiés et certifiés. Réduisez vos factures d'énergie au minimum. Devis gratuit.",
-  alternates: { canonical: "/constructeur-nord-maison-passive/douai" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-nord-maison-passive/douai" },
   openGraph: buildOpenGraph("/constructeur-nord-maison-passive/douai", "website"),
 };
 

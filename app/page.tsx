@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison Nord — Devis gratuit & sur mesure",
   description:
     "Comparez les meilleurs constructeurs de maison dans le Nord. Partenaires vérifiés, accompagnement gratuit de A à Z, projet 100% sur mesure dans les Hauts-de-France.",
-  alternates: { canonical: "/" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/" },
   openGraph: buildOpenGraph("/", "website"),
 };
 

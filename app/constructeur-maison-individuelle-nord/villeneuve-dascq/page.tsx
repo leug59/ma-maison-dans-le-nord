@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison individuelle à Villeneuve-d'Ascq",
   description:
     "Maison individuelle à Villeneuve-d'Ascq, technopole scientifique entre Lille et Roubaix. INSERM, CNRS, Mines-Télécom. Constructeurs sélectionnés. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-individuelle-nord/villeneuve-dascq" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-individuelle-nord/villeneuve-dascq" },
   openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord/villeneuve-dascq", "website"),
 };
 

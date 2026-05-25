@@ -8,7 +8,7 @@ import { buildServiceSchema } from "@/app/_lib/schema";
 export const metadata: Metadata = {
   title: "Constructeur maison ossature bois Nord",
   description: "Maison à ossature bois dans le Nord : caractéristiques, avantages (énergie, écologie, délais) et inconvénients. Trouvez votre constructeur MOB.",
-  alternates: { canonical: "/constructeur-maison-bois-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-bois-nord" },
   openGraph: buildOpenGraph("/constructeur-maison-bois-nord", "website"),
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison cubique à Lille",
   description:
     "Trouvez votre constructeur de maison cubique à Lille et dans la métropole. Architecture moderne à toit plat, cubes emboîtés, grandes baies vitrées. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-cubique-nord/lille" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-cubique-nord/lille" },
   openGraph: buildOpenGraph("/constructeur-maison-cubique-nord/lille", "website"),
 };
 

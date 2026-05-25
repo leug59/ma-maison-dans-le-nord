@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison ossature bois à Douai",
   description:
     "Maison à ossature bois à Douai, ville dynamique à 20 min de Lille. Construction écologique avec garantie de prix et de délais. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-bois-nord/douai" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-bois-nord/douai" },
   openGraph: buildOpenGraph("/constructeur-maison-bois-nord/douai", "website"),
 };
 

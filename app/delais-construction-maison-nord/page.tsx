@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Délais construction maison Nord — Timing complet",
   description:
     "De la recherche du terrain à la remise des clés, comptez 12 à 18 mois pour faire construire dans le Nord. Le détail de chaque étape et les facteurs qui allongent les délais.",
-  alternates: { canonical: "/delais-construction-maison-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/delais-construction-maison-nord" },
   openGraph: buildOpenGraph("/delais-construction-maison-nord", "article"),
 };
 

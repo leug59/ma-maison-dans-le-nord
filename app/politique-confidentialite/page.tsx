@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Politique de confidentialité — Ma Maison dans le Nord",
   description:
     "Politique de confidentialité et de protection des données personnelles du site ma-maison-dans-le-nord.fr, conformément au RGPD.",
-  alternates: { canonical: "/politique-confidentialite" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/politique-confidentialite" },
 };
 
 const sections = [

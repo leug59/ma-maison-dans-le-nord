@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Douai",
   description:
     "Construisez votre maison plain-pied à Douai dans un cadre de vie idyllique. Facile à chauffer et entretenir dans le climat du Nord. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-plain-pied-nord/douai" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-plain-pied-nord/douai" },
   openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/douai", "website"),
 };
 

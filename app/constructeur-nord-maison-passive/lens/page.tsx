@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison passive à Lens",
   description:
     "Maison passive à Lens, ville du Louvre-Lens. Constructeurs certifiés, aide à la recherche de terrain. Économies d'énergie maximales dans le Nord. Devis gratuit.",
-  alternates: { canonical: "/constructeur-nord-maison-passive/lens" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-nord-maison-passive/lens" },
   openGraph: buildOpenGraph("/constructeur-nord-maison-passive/lens", "website"),
 };
 

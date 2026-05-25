@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Blog construction maison Nord — Conseils & guides",
   description:
     "Guides et conseils sur la construction de maison individuelle dans les Hauts-de-France : durée de vie ossature bois, choix du terrain, systèmes de chauffage, domotique.",
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/blog" },
   openGraph: buildOpenGraph("/blog", "website"),
 };
 

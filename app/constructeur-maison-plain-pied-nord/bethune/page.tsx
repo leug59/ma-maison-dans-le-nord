@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison plain-pied à Béthune",
   description:
     "Construisez votre maison plain-pied à Béthune, ville dynamique du Pas-de-Calais. Commerces, transports, calme et dynamisme. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-plain-pied-nord/bethune" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-plain-pied-nord/bethune" },
   openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord/bethune", "website"),
 };
 

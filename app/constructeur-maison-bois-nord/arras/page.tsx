@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison ossature bois à Arras",
   description:
     "Maison à ossature bois à Arras, capitale du Pas-de-Calais. Construction écologique, rapide et performante. Partenaires expérimentés. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-bois-nord/arras" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-bois-nord/arras" },
   openGraph: buildOpenGraph("/constructeur-maison-bois-nord/arras", "website"),
 };
 

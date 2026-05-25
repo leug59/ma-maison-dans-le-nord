@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison cubique à Villeneuve-d'Ascq",
   description:
     "Construisez votre maison cubique à Villeneuve-d'Ascq, technopole verte entre Lille et Roubaix. Architecture contemporaine personnalisée. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-cubique-nord/villeneuve-dascq" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-cubique-nord/villeneuve-dascq" },
   openGraph: buildOpenGraph("/constructeur-maison-cubique-nord/villeneuve-dascq", "website"),
 };
 

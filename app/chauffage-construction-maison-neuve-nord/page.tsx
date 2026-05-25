@@ -7,7 +7,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 export const metadata: Metadata = {
   title: "Chauffage maison neuve Nord — Quel système choisir ?",
   description: "PAC aérothermique, géothermique, poêle à bois ou granulés, électrique, maison passive : comparatif complet des systèmes de chauffage pour une maison neuve dans le Nord.",
-  alternates: { canonical: "/chauffage-construction-maison-neuve-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/chauffage-construction-maison-neuve-nord" },
   openGraph: buildOpenGraph("/chauffage-construction-maison-neuve-nord", "article"),
 };
 

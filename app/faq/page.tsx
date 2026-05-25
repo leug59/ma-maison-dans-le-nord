@@ -6,7 +6,7 @@ import { buildOpenGraph } from "@/app/_lib/og";
 export const metadata: Metadata = {
   title: "FAQ construction maison dans le Nord",
   description: "Toutes les réponses à vos questions sur la construction de maison dans le Nord : constructeur, budget, terrain, types de maisons, démarches.",
-  alternates: { canonical: "/faq" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/faq" },
   openGraph: buildOpenGraph("/faq", "website"),
 };
 

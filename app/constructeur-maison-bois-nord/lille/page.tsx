@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison ossature bois à Lille",
   description:
     "Construisez votre maison à ossature bois à Lille et dans la MEL. Écologique, rapide, performante. La métropole encourage les constructions durables. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-bois-nord/lille" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-bois-nord/lille" },
   openGraph: buildOpenGraph("/constructeur-maison-bois-nord/lille", "website"),
 };
 

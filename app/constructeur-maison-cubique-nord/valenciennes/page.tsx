@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison cubique à Valenciennes",
   description:
     "Construisez votre maison cubique à Valenciennes, 5e centre-ville le plus dynamique de France. Architecture contemporaine personnalisée. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-cubique-nord/valenciennes" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-cubique-nord/valenciennes" },
   openGraph: buildOpenGraph("/constructeur-maison-cubique-nord/valenciennes", "website"),
 };
 

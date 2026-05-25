@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison contemporaine à Béthune",
   description:
     "Maison contemporaine à Béthune (Pas-de-Calais) : parcs, écoles, quartiers variés. Architecture design, matériaux modernes. Devis gratuit.",
-  alternates: { canonical: "/constructeur-de-maison-contemporaine-nord/bethune" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-de-maison-contemporaine-nord/bethune" },
   openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord/bethune", "website"),
 };
 

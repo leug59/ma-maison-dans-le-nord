@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Mentions légales — Ma Maison dans le Nord",
   description:
     "Mentions légales du site ma-maison-dans-le-nord.fr : éditeur, hébergeur, propriété intellectuelle, données personnelles et conditions d'utilisation.",
-  alternates: { canonical: "/mentions-legales" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/mentions-legales" },
 };
 
 const sections = [

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison individuelle à Lille",
   description:
     "Construisez votre maison individuelle à Lille : Bois-Blancs, Faubourg de Béthune, Lille-Sud, Fives… Savoir-faire local et accompagnement personnalisé. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-individuelle-nord/lille" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-individuelle-nord/lille" },
   openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord/lille", "website"),
 };
 

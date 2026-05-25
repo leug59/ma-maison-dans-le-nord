@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle dans le Nord",
   description:
     "Façade en briques rouges, toit pentu, menuiseries foncées : découvrez les caractéristiques d'une maison traditionnelle du Nord et comment trouver le bon constructeur.",
-  alternates: { canonical: "/constructeur-maison-traditionnelle-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-traditionnelle-nord" },
   openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord", "website"),
 };
 

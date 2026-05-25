@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Devis construction maison Nord — Demande gratuite",
   description:
     "Décrivez votre projet de maison individuelle dans les Hauts-de-France et recevez une mise en relation gratuite avec nos constructeurs partenaires. Devis sans engagement.",
-  alternates: { canonical: "/devis" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/devis" },
   openGraph: buildOpenGraph("/devis", "website"),
 };
 

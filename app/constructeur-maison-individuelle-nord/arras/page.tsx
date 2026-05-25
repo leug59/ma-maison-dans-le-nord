@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison individuelle à Arras",
   description:
     "Maison individuelle à Arras (Pas-de-Calais) : piscines, golf, arts, culture. Constructeurs sélectionnés pour leur sérieux. Devis gratuit et sans engagement.",
-  alternates: { canonical: "/constructeur-maison-individuelle-nord/arras" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-individuelle-nord/arras" },
   openGraph: buildOpenGraph("/constructeur-maison-individuelle-nord/arras", "website"),
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Valenciennes",
   description:
     "Maison traditionnelle à Valenciennes : Lille 30 min, Paris TGV 1h50, Bruxelles 1h. Prix et délais garantis contractuellement. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-traditionnelle-nord/valenciennes" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-traditionnelle-nord/valenciennes" },
   openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/valenciennes", "website"),
 };
 

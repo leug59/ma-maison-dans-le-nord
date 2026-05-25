@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Lille",
   description:
     "Maison traditionnelle à Lille : briques rouges, toits pentus, chiens assis — l'architecture flamande emblématique du Nord. Constructeurs qualifiés. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-traditionnelle-nord/lille" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-traditionnelle-nord/lille" },
   openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/lille", "website"),
 };
 

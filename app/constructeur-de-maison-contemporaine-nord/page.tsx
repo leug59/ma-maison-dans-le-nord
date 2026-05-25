@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison contemporaine Nord",
   description:
     "Vous rêvez d'une maison moderne dans le Nord ? Trouvez votre constructeur de maison contemporaine dans le Nord-Pas-de-Calais grâce à notre réseau de partenaires locaux.",
-  alternates: { canonical: "/constructeur-de-maison-contemporaine-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-de-maison-contemporaine-nord" },
   openGraph: buildOpenGraph("/constructeur-de-maison-contemporaine-nord", "website"),
 };
 

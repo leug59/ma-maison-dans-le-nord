@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Contact — Ma Maison dans le Nord",
   description:
     "Contactez l'équipe de Ma Maison dans le Nord pour toute question sur votre projet de construction de maison individuelle dans les Hauts-de-France.",
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/contact" },
   openGraph: buildOpenGraph("/contact", "website"),
 };
 

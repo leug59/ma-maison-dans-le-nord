@@ -8,7 +8,7 @@ import { buildServiceSchema } from "@/app/_lib/schema";
 export const metadata: Metadata = {
   title: "Constructeur maison plain-pied dans le Nord",
   description: "Maison plain-pied dans le Nord : avantages, construction, choix du constructeur. Accessible, économique, pratique pour toute la famille.",
-  alternates: { canonical: "/constructeur-maison-plain-pied-nord" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-plain-pied-nord" },
   openGraph: buildOpenGraph("/constructeur-maison-plain-pied-nord", "website"),
 };
 

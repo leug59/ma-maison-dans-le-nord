@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Constructeur maison traditionnelle à Douai",
   description:
     "Maison traditionnelle à Douai : beffroi UNESCO, villas Art Déco, briques rouges et toits noirs. Constructeurs locaux, budget respecté. Devis gratuit.",
-  alternates: { canonical: "/constructeur-maison-traditionnelle-nord/douai" },
+  alternates: { canonical: "https://www.ma-maison-dans-le-nord.fr/constructeur-maison-traditionnelle-nord/douai" },
   openGraph: buildOpenGraph("/constructeur-maison-traditionnelle-nord/douai", "website"),
 };
 
