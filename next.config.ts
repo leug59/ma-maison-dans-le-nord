@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  trailingSlash: false,
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
@@ -17,10 +18,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // ── Trailing slash → sans slash (couvre toutes les pages) ────────
+      // statusCode: 301 explicite car permanent:true génère 308 (ignoré par Google pour la canonicalisation)
       {
         source: "/:path+/",
         destination: "/:path+",
-        permanent: true,
+        statusCode: 301,
       },
 
       // ── Pages principales ────────────────────────────────────────────
