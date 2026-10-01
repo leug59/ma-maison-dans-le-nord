@@ -18,6 +18,7 @@ export interface CityMaisonData {
   partner?: { title: string; body: string; points: string[] };
   serviceArea?: { title: string; intro: string; communes: string[] };
   faq?: { question: string; answer: string }[];
+  relatedTypes?: { title: string; intro?: string; links: { label: string; href: string }[] };
 }
 
 export default function CityMaisonPage({
@@ -213,6 +214,29 @@ export default function CityMaisonPage({
             <h2 className="font-display text-2xl font-bold text-navy mb-4">{data.serviceArea.title}</h2>
             <p className="text-gray-700 leading-relaxed mb-4">{data.serviceArea.intro}</p>
             <p className="text-gray-600 leading-relaxed">{data.serviceArea.communes.join(", ")}.</p>
+          </div>
+        </section>
+      )}
+
+      {/* Autres types de maison dans la même ville */}
+      {data.relatedTypes && (
+        <section className="bg-gray-50 py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display text-2xl font-bold text-navy mb-4">{data.relatedTypes.title}</h2>
+            {data.relatedTypes.intro && (
+              <p className="text-gray-700 leading-relaxed mb-8">{data.relatedTypes.intro}</p>
+            )}
+            <div className="flex flex-wrap gap-3">
+              {data.relatedTypes.links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="px-5 py-2.5 border-2 border-navy text-navy font-medium rounded-lg hover:bg-navy hover:text-white transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       )}
