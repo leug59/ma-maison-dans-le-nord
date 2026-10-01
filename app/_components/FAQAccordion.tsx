@@ -48,11 +48,9 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
               </svg>
             </button>
           </dt>
-          {openIndex === index && (
-            <dd className="px-6 py-4 bg-white border-t border-gray-100">
-              <p className="text-gray-600 leading-relaxed">{item.answer}</p>
-            </dd>
-          )}
+          <dd className={`px-6 py-4 bg-white border-t border-gray-100${openIndex === index ? "" : " hidden"}`}>
+            <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+          </dd>
         </div>
       ))}
     </dl>

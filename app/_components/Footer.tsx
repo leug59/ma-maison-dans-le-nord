@@ -118,23 +118,28 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-white/40 text-xs">
-            © {new Date().getFullYear()} Ma Maison dans le Nord. Tous droits réservés.
+        <div className="border-t border-white/10 mt-12 pt-8">
+          <p className="text-white/40 text-xs text-center mb-6">
+            Ma Maison dans le Nord est rémunéré par ses constructeurs partenaires lorsqu&apos;un projet se concrétise. Ce service est gratuit pour vous.
           </p>
-          <div className="flex gap-6">
-            <Link
-              href="/mentions-legales"
-              className="text-white/40 hover:text-white/60 text-xs transition-colors"
-            >
-              Mentions légales
-            </Link>
-            <Link
-              href="/politique-confidentialite"
-              className="text-white/40 hover:text-white/60 text-xs transition-colors"
-            >
-              Politique de confidentialité
-            </Link>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-white/40 text-xs">
+              © {new Date().getFullYear()} Ma Maison dans le Nord. Tous droits réservés.
+            </p>
+            <div className="flex gap-6">
+              <Link
+                href="/mentions-legales"
+                className="text-white/40 hover:text-white/60 text-xs transition-colors"
+              >
+                Mentions légales
+              </Link>
+              <Link
+                href="/politique-confidentialite"
+                className="text-white/40 hover:text-white/60 text-xs transition-colors"
+              >
+                Politique de confidentialité
+              </Link>
+            </div>
           </div>
         </div>
       </div>

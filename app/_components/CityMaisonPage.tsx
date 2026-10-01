@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { buildBreadcrumbSchema } from "@/app/_lib/schema";
+import { buildBreadcrumbSchema, buildFAQSchema } from "@/app/_lib/schema";
+import FAQAccordion from "@/app/_components/FAQAccordion";
 
 export interface CityMaisonData {
   maisonTypeLabel: string;
@@ -12,6 +13,11 @@ export interface CityMaisonData {
   whyBuild: string;
   constructorAdvice: string;
   relatedCities: { label: string; href: string }[];
+  contentSections?: { title: string; paragraphs: string[] }[];
+  pricing?: { title: string; intro: string; rows: { label: string; value: string }[]; note?: string };
+  partner?: { title: string; body: string; points: string[] };
+  serviceArea?: { title: string; intro: string; communes: string[] };
+  faq?: { question: string; answer: string }[];
 }
 
 export default function CityMaisonPage({
@@ -29,12 +35,20 @@ export default function CityMaisonPage({
       ])
     : null;
 
+  const faqSchema = data.faq ? buildFAQSchema(data.faq) : null;
+
   return (
     <>
       {breadcrumbSchema && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      )}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
       {/* Hero */}
@@ -85,6 +99,14 @@ export default function CityMaisonPage({
             </h2>
             <p className="text-gray-700 leading-relaxed">{data.whyBuild}</p>
           </div>
+          {data.contentSections?.map((section, i) => (
+            <div key={i}>
+              <h2 className="font-display text-2xl font-bold text-navy mb-4">{section.title}</h2>
+              {section.paragraphs.map((p, j) => (
+                <p key={j} className="text-gray-700 leading-relaxed mb-4 last:mb-0">{p}</p>
+              ))}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -133,6 +155,68 @@ export default function CityMaisonPage({
         </div>
       </section>
 
+      {/* Pricing */}
+      {data.pricing && (
+        <section className="py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display text-2xl font-bold text-navy mb-4">{data.pricing.title}</h2>
+            <p className="text-gray-700 text-lg leading-relaxed mb-8">{data.pricing.intro}</p>
+            <div className="overflow-x-auto rounded-xl border border-gray-200">
+              <table className="w-full text-left">
+                <tbody>
+                  {data.pricing.rows.map((row, i) => (
+                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                      <td className="px-6 py-4 font-medium text-navy border-b border-gray-100 last:border-0">{row.label}</td>
+                      <td className="px-6 py-4 text-gray-600 border-b border-gray-100 last:border-0">{row.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {data.pricing.note && (
+              <p className="text-gray-500 text-sm mt-4 italic">{data.pricing.note}</p>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* Constructeur partenaire */}
+      {data.partner && (
+        <section className="bg-gray-50 py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl border border-gold/30 p-8 shadow-sm">
+              <h2 className="font-display text-2xl font-bold text-navy mb-4">{data.partner.title}</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">{data.partner.body}</p>
+              <ul className="space-y-3 mb-8">
+                {data.partner.points.map((point, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="w-5 h-5 rounded-full bg-gold/20 text-gold font-bold text-xs flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                    <span className="text-gray-600">{point}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/devis"
+                className="inline-block px-8 py-4 bg-gold text-white font-semibold rounded-lg hover:bg-gold-400 transition-colors"
+              >
+                Obtenir un devis gratuit
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Zone de service */}
+      {data.serviceArea && (
+        <section className="py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display text-2xl font-bold text-navy mb-4">{data.serviceArea.title}</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">{data.serviceArea.intro}</p>
+            <p className="text-gray-600 leading-relaxed">{data.serviceArea.communes.join(", ")}.</p>
+          </div>
+        </section>
+      )}
+
       {/* Autres villes */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
@@ -161,6 +245,16 @@ export default function CityMaisonPage({
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      {data.faq && (
+        <section className="py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display text-2xl font-bold text-navy mb-8">Questions fréquentes</h2>
+            <FAQAccordion items={data.faq} />
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="bg-navy py-20 px-4">
